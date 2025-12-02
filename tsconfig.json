@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "ES2022",
+    "target": "ES2022",
+    "esModuleInterop": true,
+    "moduleResolution": "Bundler",
+    "outDir": "./lib",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+    },
+    "rootDir": "./src",
+    "declaration": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "types": [
+      "node",
+      "tailwindcss"
+    ]
+  },
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "karin-plugin-mys-template",
+  "version": "1.0.0",
+  "author": "babanbang",
+  "type": "module",
+  "description": "karin-plugin-mys-core",
+  "homepage": "https://github.com/Karin-Mys-Plugins/karin-plugin-mys-template",
+  "bugs": {
+    "url": "https://github.com/Karin-Mys-Plugins/karin-plugin-mys-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karin-Mys-Plugins/karin-plugin-mys-template.git"
+  },
+  "scripts": {
+    "app": "node lib/app.js",
+    "build": "npm run build:css && tsup",
+    "build:css": "tailwindcss -i src/template/tailwind.css -o resources/styles/karin-plugin-mys-core.css",
+    "dev": "cross-env EBV_FILE=\"development.env\" node --import tsx src/app.ts",
+    "dev:css": "tailwindcss -i src/template/tailwind.css -o resources/styles/karin-plugin-mys-core.css --watch",
+    "pub": "npm publish --access public"
+  },
+  "main": "lib/index.js",
+  "devDependencies": {
+    "@karinjs/plugin-puppeteer": "^1.0.21",
+    "@types/express": "^5.0.1",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^20.17.8",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.7.0",
+    "neostandard": "^0.11.9",
+    "node-karin": "^1.13.0",
+    "tailwindcss": "^3.4.17",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.5.3"
+  },
+  "peerDependencies": {
+    "karin-plugin-mys-core": "^1.0.4"
+  },
+  "karin": {
+    "main": "src/index.ts",
+    "apps": [
+      "lib/apps"
+    ],
+    "ts-apps": [
+      "src/apps"
+    ],
+    "web": "./lib/web.config.js",
+    "ts-web": "./src/web.config.ts",
+    "static": [
+      "resources"
+    ],
+    "files": [
+      "config",
+      "data",
+      "resources"
+    ]
+  },
+  "files": [
+    "LICENSE",
+    "/lib/**/*.js",
+    "/lib/**/*.d.ts",
+    "resources",
+    "!resources/**/*.css.map",
+    "!resources/**/*.scss",
+    "!lib/app.js"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}

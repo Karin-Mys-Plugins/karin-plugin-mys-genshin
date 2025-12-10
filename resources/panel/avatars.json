@@ -1,0 +1,3582 @@
+[
+  {
+    "Id": "10000002",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Ayaka_01.png",
+          "UI_Talent_S_Ayaka_02.png",
+          "UI_Talent_U_Ayaka_02.png",
+          "UI_Talent_S_Ayaka_03.png",
+          "UI_Talent_U_Ayaka_01.png",
+          "UI_Talent_S_Ayaka_04.png"
+        ],
+        "Skills": {
+          "10024": "Skill_A_01.png",
+          "10018": "Skill_S_Ayaka_01.png",
+          "10019": "Skill_E_Ayaka.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "200201": {
+        "SideIcon": "UI_AvatarIcon_Side_AyakaCostumeFruhling.png",
+        "Icon": "UI_AvatarIcon_AyakaCostumeFruhling.png",
+        "GachaIcon": "UI_Costume_AyakaCostumeFruhling.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Ayaka.png",
+        "Icon": "UI_AvatarIcon_Ayaka.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Ayaka.png"
+      }
+    }
+  },
+  {
+    "Id": "10000003",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Qin_01.png",
+          "UI_Talent_S_Qin_02.png",
+          "UI_Talent_U_Qin_02.png",
+          "UI_Talent_S_Qin_03.png",
+          "UI_Talent_U_Qin_01.png",
+          "UI_Talent_S_Qin_04.png"
+        ],
+        "Skills": {
+          "10031": "Skill_A_01.png",
+          "10033": "Skill_S_Qin_02.png",
+          "10034": "Skill_E_Qin_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "200301": {
+        "SideIcon": "UI_AvatarIcon_Side_QinCostumeSea.png",
+        "Icon": "UI_AvatarIcon_QinCostumeSea.png",
+        "GachaIcon": "UI_Costume_QinCostumeSea.png"
+      },
+      "200302": {
+        "SideIcon": "UI_AvatarIcon_Side_QinCostumeWic.png",
+        "Icon": "UI_AvatarIcon_QinCostumeWic.png",
+        "GachaIcon": "UI_Costume_QinCostumeWic.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Qin.png",
+        "Icon": "UI_AvatarIcon_Qin.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Qin.png"
+      }
+    }
+  },
+  {
+    "Id": "10000005",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_PlayerFire_01.png",
+          "UI_Talent_S_PlayerFire_02.png",
+          "UI_Talent_U_PlayerFire_01.png",
+          "UI_Talent_S_PlayerFire_03.png",
+          "UI_Talent_U_PlayerFire_02.png",
+          "UI_Talent_S_PlayerFire_04.png"
+        ],
+        "Skills": {
+          "100541": "Skill_A_01.png",
+          "10097": "Skill_S_PlayerFire_01.png",
+          "10098": "Skill_E_PlayerFire_01.png"
+        }
+      },
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_PlayerWater_01.png",
+          "UI_Talent_S_PlayerWater_02.png",
+          "UI_Talent_U_PlayerWater_01.png",
+          "UI_Talent_S_PlayerWater_03.png",
+          "UI_Talent_U_PlayerWater_02.png",
+          "UI_Talent_S_PlayerWater_04.png"
+        ],
+        "Skills": {
+          "100542": "Skill_A_01.png",
+          "10087": "Skill_S_PlayerWater_01.png",
+          "10088": "Skill_E_PlayerWater_01.png"
+        }
+      },
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_PlayerWind_01.png",
+          "UI_Talent_S_PlayerWind_02.png",
+          "UI_Talent_U_PlayerWind_02.png",
+          "UI_Talent_S_PlayerWind_03.png",
+          "UI_Talent_U_PlayerWind_01.png",
+          "UI_Talent_S_PlayerWind_04.png"
+        ],
+        "Skills": {
+          "100543": "Skill_A_01.png",
+          "10067": "Skill_S_PlayerWind_01.png",
+          "10068": "Skill_E_PlayerWind_01.png"
+        }
+      },
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_PlayerRock_01.png",
+          "UI_Talent_S_PlayerRock_02.png",
+          "UI_Talent_U_PlayerRock_02.png",
+          "UI_Talent_S_PlayerRock_03.png",
+          "UI_Talent_U_PlayerRock_01.png",
+          "UI_Talent_S_PlayerRock_04.png"
+        ],
+        "Skills": {
+          "100545": "Skill_A_01.png",
+          "10077": "Skill_S_PlayerRock_01.png",
+          "10078": "Skill_E_PlayerRock_01.png"
+        }
+      },
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_PlayerElectric_01.png",
+          "UI_Talent_S_PlayerElectric_02.png",
+          "UI_Talent_U_PlayerElectric_01.png",
+          "UI_Talent_S_PlayerElectric_03.png",
+          "UI_Talent_U_PlayerElectric_02.png",
+          "UI_Talent_S_PlayerElectric_04.png"
+        ],
+        "Skills": {
+          "100546": "Skill_A_01.png",
+          "10602": "Skill_S_PlayerElectric_01.png",
+          "10605": "Skill_E_PlayerElectric_01.png"
+        }
+      },
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_PlayerGrass_01.png",
+          "UI_Talent_S_PlayerGrass_02.png",
+          "UI_Talent_S_PlayerGrass_03.png",
+          "UI_Talent_S_PlayerGrass_04.png",
+          "UI_Talent_S_PlayerGrass_05.png",
+          "UI_Talent_S_PlayerGrass_06.png"
+        ],
+        "Skills": {
+          "100547": "Skill_A_01.png",
+          "10117": "Skill_E_PlayerGrass_01.png",
+          "10118": "Skill_S_PlayerGrass_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_PlayerBoy.png",
+        "Icon": "UI_AvatarIcon_PlayerBoy.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_PlayerBoy.png"
+      }
+    }
+  },
+  {
+    "Id": "10000006",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Lisa_01.png",
+          "UI_Talent_S_Lisa_02.png",
+          "UI_Talent_U_Lisa_02.png",
+          "UI_Talent_S_Lisa_03.png",
+          "UI_Talent_U_Lisa_01.png",
+          "UI_Talent_S_Lisa_04.png"
+        ],
+        "Skills": {
+          "10060": "Skill_A_Catalyst_MD.png",
+          "10061": "Skill_S_Lisa_01.png",
+          "10062": "Skill_E_Lisa_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "200601": {
+        "SideIcon": "UI_AvatarIcon_Side_LisaCostumeStudentin.png",
+        "Icon": "UI_AvatarIcon_LisaCostumeStudentin.png",
+        "GachaIcon": "UI_Costume_LisaCostumeStudentin.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Lisa.png",
+        "Icon": "UI_AvatarIcon_Lisa.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Lisa.png"
+      }
+    }
+  },
+  {
+    "Id": "10000007",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_PlayerFire_01.png",
+          "UI_Talent_S_PlayerFire_02.png",
+          "UI_Talent_U_PlayerFire_01.png",
+          "UI_Talent_S_PlayerFire_03.png",
+          "UI_Talent_U_PlayerFire_02.png",
+          "UI_Talent_S_PlayerFire_04.png"
+        ],
+        "Skills": {
+          "100551": "Skill_A_01.png",
+          "10097": "Skill_S_PlayerFire_01.png",
+          "10098": "Skill_E_PlayerFire_01.png"
+        }
+      },
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_PlayerWater_01.png",
+          "UI_Talent_S_PlayerWater_02.png",
+          "UI_Talent_U_PlayerWater_01.png",
+          "UI_Talent_S_PlayerWater_03.png",
+          "UI_Talent_U_PlayerWater_02.png",
+          "UI_Talent_S_PlayerWater_04.png"
+        ],
+        "Skills": {
+          "100552": "Skill_A_01.png",
+          "10087": "Skill_S_PlayerWater_01.png",
+          "10088": "Skill_E_PlayerWater_01.png"
+        }
+      },
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_PlayerWind_01.png",
+          "UI_Talent_S_PlayerWind_02.png",
+          "UI_Talent_U_PlayerWind_02.png",
+          "UI_Talent_S_PlayerWind_03.png",
+          "UI_Talent_U_PlayerWind_01.png",
+          "UI_Talent_S_PlayerWind_04.png"
+        ],
+        "Skills": {
+          "100553": "Skill_A_01.png",
+          "10067": "Skill_S_PlayerWind_01.png",
+          "10068": "Skill_E_PlayerWind_01.png"
+        }
+      },
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_PlayerRock_01.png",
+          "UI_Talent_S_PlayerRock_02.png",
+          "UI_Talent_U_PlayerRock_02.png",
+          "UI_Talent_S_PlayerRock_03.png",
+          "UI_Talent_U_PlayerRock_01.png",
+          "UI_Talent_S_PlayerRock_04.png"
+        ],
+        "Skills": {
+          "100555": "Skill_A_01.png",
+          "10077": "Skill_S_PlayerRock_01.png",
+          "10078": "Skill_E_PlayerRock_01.png"
+        }
+      },
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_PlayerElectric_01.png",
+          "UI_Talent_S_PlayerElectric_02.png",
+          "UI_Talent_U_PlayerElectric_01.png",
+          "UI_Talent_S_PlayerElectric_03.png",
+          "UI_Talent_U_PlayerElectric_02.png",
+          "UI_Talent_S_PlayerElectric_04.png"
+        ],
+        "Skills": {
+          "100556": "Skill_A_01.png",
+          "10602": "Skill_S_PlayerElectric_01.png",
+          "10605": "Skill_E_PlayerElectric_01.png"
+        }
+      },
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_PlayerGrass_01.png",
+          "UI_Talent_S_PlayerGrass_02.png",
+          "UI_Talent_S_PlayerGrass_03.png",
+          "UI_Talent_S_PlayerGrass_04.png",
+          "UI_Talent_S_PlayerGrass_05.png",
+          "UI_Talent_S_PlayerGrass_06.png"
+        ],
+        "Skills": {
+          "100557": "Skill_A_01.png",
+          "10117": "Skill_E_PlayerGrass_01.png",
+          "10118": "Skill_S_PlayerGrass_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_PlayerGirl.png",
+        "Icon": "UI_AvatarIcon_PlayerGirl.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_PlayerGirl.png"
+      }
+    }
+  },
+  {
+    "Id": "10000014",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Barbara_01.png",
+          "UI_Talent_S_Barbara_02.png",
+          "UI_Talent_U_Barbara_02.png",
+          "UI_Talent_S_Barbara_03.png",
+          "UI_Talent_U_Barbara_01.png",
+          "UI_Talent_S_Barbara_04.png"
+        ],
+        "Skills": {
+          "10070": "Skill_A_Catalyst_MD.png",
+          "10071": "Skill_S_Barbara_01.png",
+          "10072": "Skill_E_Barbara_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "201401": {
+        "SideIcon": "UI_AvatarIcon_Side_BarbaraCostumeSummertime.png",
+        "Icon": "UI_AvatarIcon_BarbaraCostumeSummertime.png",
+        "GachaIcon": "UI_Costume_BarbaraCostumeSummertime.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Barbara.png",
+        "Icon": "UI_AvatarIcon_Barbara.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Barbara.png"
+      }
+    }
+  },
+  {
+    "Id": "10000015",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Kaeya_01.png",
+          "UI_Talent_S_Kaeya_02.png",
+          "UI_Talent_U_Kaeya_01.png",
+          "UI_Talent_S_Kaeya_03.png",
+          "UI_Talent_U_Kaeya_02.png",
+          "UI_Talent_S_Kaeya_04.png"
+        ],
+        "Skills": {
+          "10073": "Skill_A_01.png",
+          "10074": "Skill_S_Kaeya_01.png",
+          "10075": "Skill_E_Kaeya_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "201501": {
+        "SideIcon": "UI_AvatarIcon_Side_KaeyaCostumeDancer.png",
+        "Icon": "UI_AvatarIcon_KaeyaCostumeDancer.png",
+        "GachaIcon": "UI_Costume_KaeyaCostumeDancer.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Kaeya.png",
+        "Icon": "UI_AvatarIcon_Kaeya.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Kaeya.png"
+      }
+    }
+  },
+  {
+    "Id": "10000016",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Diluc_01.png",
+          "UI_Talent_S_Diluc_02.png",
+          "UI_Talent_U_Diluc_01.png",
+          "UI_Talent_S_Diluc_03.png",
+          "UI_Talent_U_Diluc_02.png",
+          "UI_Talent_S_Diluc_04.png"
+        ],
+        "Skills": {
+          "10160": "Skill_A_04.png",
+          "10161": "Skill_S_Diluc_01_01.png",
+          "10165": "Skill_E_Diluc_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "201601": {
+        "SideIcon": "UI_AvatarIcon_Side_DilucCostumeFlamme.png",
+        "Icon": "UI_AvatarIcon_DilucCostumeFlamme.png",
+        "GachaIcon": "UI_Costume_DilucCostumeFlamme.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Diluc.png",
+        "Icon": "UI_AvatarIcon_Diluc.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Diluc.png"
+      }
+    }
+  },
+  {
+    "Id": "10000020",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Razor_01.png",
+          "UI_Talent_S_Razor_02.png",
+          "UI_Talent_U_Razor_02.png",
+          "UI_Talent_S_Razor_03.png",
+          "UI_Talent_U_Razor_01.png",
+          "UI_Talent_S_Razor_04.png"
+        ],
+        "Skills": {
+          "10201": "Skill_A_04.png",
+          "10202": "Skill_S_Razor_01.png",
+          "10203": "Skill_E_Razor_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Razor.png",
+        "Icon": "UI_AvatarIcon_Razor.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Razor.png"
+      }
+    }
+  },
+  {
+    "Id": "10000021",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Ambor_01.png",
+          "UI_Talent_S_Ambor_02.png",
+          "UI_Talent_U_Ambor_02.png",
+          "UI_Talent_S_Ambor_03.png",
+          "UI_Talent_U_Ambor_01.png",
+          "UI_Talent_S_Ambor_04.png"
+        ],
+        "Skills": {
+          "10041": "Skill_A_02.png",
+          "10032": "Skill_S_Ambor_01.png",
+          "10017": "Skill_E_Ambor.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "202101": {
+        "SideIcon": "UI_AvatarIcon_Side_AmborCostumeWic.png",
+        "Icon": "UI_AvatarIcon_AmborCostumeWic.png",
+        "GachaIcon": "UI_Costume_AmborCostumeWic.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Ambor.png",
+        "Icon": "UI_AvatarIcon_Ambor.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Ambor.png"
+      }
+    }
+  },
+  {
+    "Id": "10000022",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Venti_01.png",
+          "UI_Talent_S_Venti_02.png",
+          "UI_Talent_U_Venti_02.png",
+          "UI_Talent_S_Venti_03.png",
+          "UI_Talent_U_Venti_01.png",
+          "UI_Talent_S_Venti_04.png"
+        ],
+        "Skills": {
+          "10221": "Skill_A_02.png",
+          "10224": "Skill_S_Venti_01.png",
+          "10225": "Skill_E_Venti_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Venti.png",
+        "Icon": "UI_AvatarIcon_Venti.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Venti.png"
+      }
+    }
+  },
+  {
+    "Id": "10000023",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Xiangling_01.png",
+          "UI_Talent_S_Xiangling_02.png",
+          "UI_Talent_U_Xiangling_02.png",
+          "UI_Talent_S_Xiangling_03.png",
+          "UI_Talent_U_Xiangling_01.png",
+          "UI_Talent_S_Xiangling_04.png"
+        ],
+        "Skills": {
+          "10231": "Skill_A_03.png",
+          "10232": "Skill_S_Xiangling_01.png",
+          "10235": "Skill_E_Xiangling_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "202301": {
+        "SideIcon": "UI_AvatarIcon_Side_XianglingCostumeWinter.png",
+        "Icon": "UI_AvatarIcon_XianglingCostumeWinter.png",
+        "GachaIcon": "UI_Costume_XianglingCostumeWinter.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Xiangling.png",
+        "Icon": "UI_AvatarIcon_Xiangling.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Xiangling.png"
+      }
+    }
+  },
+  {
+    "Id": "10000024",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Beidou_02.png",
+          "UI_Talent_S_Beidou_01.png",
+          "UI_Talent_U_Beidou_01.png",
+          "UI_Talent_S_Beidou_03.png",
+          "UI_Talent_U_Beidou_02.png",
+          "UI_Talent_S_Beidou_04.png"
+        ],
+        "Skills": {
+          "10241": "Skill_A_04.png",
+          "10242": "Skill_S_Beidou_01.png",
+          "10245": "Skill_E_Beidou_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Beidou.png",
+        "Icon": "UI_AvatarIcon_Beidou.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Beidou.png"
+      }
+    }
+  },
+  {
+    "Id": "10000025",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Xingqiu_01.png",
+          "UI_Talent_S_Xingqiu_02.png",
+          "UI_Talent_U_Xingqiu_01.png",
+          "UI_Talent_S_Xingqiu_03.png",
+          "UI_Talent_U_Xingqiu_02.png",
+          "UI_Talent_S_Xingqiu_04.png"
+        ],
+        "Skills": {
+          "10381": "Skill_A_01.png",
+          "10382": "Skill_S_Xingqiu_01.png",
+          "10385": "Skill_E_Xingqiu_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "202501": {
+        "SideIcon": "UI_AvatarIcon_Side_XingqiuCostumeBamboo.png",
+        "Icon": "UI_AvatarIcon_XingqiuCostumeBamboo.png",
+        "GachaIcon": "UI_Costume_XingqiuCostumeBamboo.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Xingqiu.png",
+        "Icon": "UI_AvatarIcon_Xingqiu.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Xingqiu.png"
+      }
+    }
+  },
+  {
+    "Id": "10000026",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Xiao_01.png",
+          "UI_Talent_S_Xiao_02.png",
+          "UI_Talent_U_Xiao_01.png",
+          "UI_Talent_S_Xiao_03.png",
+          "UI_Talent_U_Xiao_02.png",
+          "UI_Talent_S_Xiao_04.png"
+        ],
+        "Skills": {
+          "10261": "Skill_A_03.png",
+          "10262": "Skill_S_Xiao_01.png",
+          "10265": "Skill_E_Xiao_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Xiao.png",
+        "Icon": "UI_AvatarIcon_Xiao.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Xiao.png"
+      }
+    }
+  },
+  {
+    "Id": "10000027",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Ningguang_01.png",
+          "UI_Talent_S_Ningguang_05.png",
+          "UI_Talent_U_Ningguang_02.png",
+          "UI_Talent_S_Ningguang_03.png",
+          "UI_Talent_U_Ningguang_01.png",
+          "UI_Talent_S_Ningguang_04.png"
+        ],
+        "Skills": {
+          "10271": "Skill_A_Catalyst_MD.png",
+          "10272": "Skill_S_Ningguang_01.png",
+          "10274": "Skill_E_Ningguang_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "202701": {
+        "SideIcon": "UI_AvatarIcon_Side_NingguangCostumeFloral.png",
+        "Icon": "UI_AvatarIcon_NingguangCostumeFloral.png",
+        "GachaIcon": "UI_Costume_NingguangCostumeFloral.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Ningguang.png",
+        "Icon": "UI_AvatarIcon_Ningguang.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Ningguang.png"
+      }
+    }
+  },
+  {
+    "Id": "10000029",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Klee_01.png",
+          "UI_Talent_S_Klee_02.png",
+          "UI_Talent_U_Klee_01.png",
+          "UI_Talent_S_Klee_03.png",
+          "UI_Talent_U_Klee_02.png",
+          "UI_Talent_S_Klee_04.png"
+        ],
+        "Skills": {
+          "10291": "Skill_A_Catalyst_MD.png",
+          "10292": "Skill_S_Klee_01.png",
+          "10295": "Skill_E_Klee_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "202901": {
+        "SideIcon": "UI_AvatarIcon_Side_KleeCostumeWitch.png",
+        "Icon": "UI_AvatarIcon_KleeCostumeWitch.png",
+        "GachaIcon": "UI_Costume_KleeCostumeWitch.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Klee.png",
+        "Icon": "UI_AvatarIcon_Klee.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Klee.png"
+      }
+    }
+  },
+  {
+    "Id": "10000030",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Zhongli_01.png",
+          "UI_Talent_S_Zhongli_02.png",
+          "UI_Talent_U_Zhongli_01.png",
+          "UI_Talent_S_Zhongli_03.png",
+          "UI_Talent_U_Zhongli_02.png",
+          "UI_Talent_S_Zhongli_04.png"
+        ],
+        "Skills": {
+          "10301": "Skill_A_03.png",
+          "10302": "Skill_S_Zhongli_01.png",
+          "10303": "Skill_E_Zhongli_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Zhongli.png",
+        "Icon": "UI_AvatarIcon_Zhongli.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Zhongli.png"
+      }
+    }
+  },
+  {
+    "Id": "10000031",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Fischl_01.png",
+          "UI_Talent_S_Fischl_02.png",
+          "UI_Talent_U_Fischl_01.png",
+          "UI_Talent_S_Fischl_03.png",
+          "UI_Talent_U_Fischl_02.png",
+          "UI_Talent_S_Fischl_04.png"
+        ],
+        "Skills": {
+          "10311": "Skill_A_02.png",
+          "10312": "Skill_S_Fischl_01.png",
+          "10313": "Skill_E_Fischl_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "203101": {
+        "SideIcon": "UI_AvatarIcon_Side_FischlCostumeHighness.png",
+        "Icon": "UI_AvatarIcon_FischlCostumeHighness.png",
+        "GachaIcon": "UI_Costume_FischlCostumeHighness.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Fischl.png",
+        "Icon": "UI_AvatarIcon_Fischl.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Fischl.png"
+      }
+    }
+  },
+  {
+    "Id": "10000032",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Bennett_01.png",
+          "UI_Talent_S_Bennett_02.png",
+          "UI_Talent_U_Bennett_01.png",
+          "UI_Talent_S_Bennett_03.png",
+          "UI_Talent_U_Bennett_02.png",
+          "UI_Talent_S_Bennett_04.png"
+        ],
+        "Skills": {
+          "10321": "Skill_A_01.png",
+          "10322": "Skill_S_Bennett_01.png",
+          "10323": "Skill_E_Bennett_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "203201": {
+        "SideIcon": "UI_AvatarIcon_Side_BennettCostumeSummer.png",
+        "Icon": "UI_AvatarIcon_BennettCostumeSummer.png",
+        "GachaIcon": "UI_Costume_BennettCostumeSummer.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Bennett.png",
+        "Icon": "UI_AvatarIcon_Bennett.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Bennett.png"
+      }
+    }
+  },
+  {
+    "Id": "10000033",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Tartaglia_01.png",
+          "UI_Talent_S_Tartaglia_02.png",
+          "UI_Talent_U_Tartaglia_01.png",
+          "UI_Talent_S_Tartaglia_05.png",
+          "UI_Talent_U_Tartaglia_02.png",
+          "UI_Talent_S_Tartaglia_04.png"
+        ],
+        "Skills": {
+          "10331": "Skill_A_02.png",
+          "10332": "Skill_S_Tartaglia_01.png",
+          "10333": "Skill_E_Tartaglia_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Tartaglia.png",
+        "Icon": "UI_AvatarIcon_Tartaglia.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Tartaglia.png"
+      }
+    }
+  },
+  {
+    "Id": "10000034",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Noel_01.png",
+          "UI_Talent_S_Noel_02.png",
+          "UI_Talent_U_Noel_01.png",
+          "UI_Talent_S_Noel_03.png",
+          "UI_Talent_U_Noel_02.png",
+          "UI_Talent_S_Noel_04.png"
+        ],
+        "Skills": {
+          "10341": "Skill_A_04.png",
+          "10342": "Skill_S_Noel_01.png",
+          "10343": "Skill_E_Noel_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Noel.png",
+        "Icon": "UI_AvatarIcon_Noel.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Noel.png"
+      }
+    }
+  },
+  {
+    "Id": "10000035",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Qiqi_01.png",
+          "UI_Talent_S_Qiqi_02.png",
+          "UI_Talent_U_Qiqi_01.png",
+          "UI_Talent_S_Qiqi_03.png",
+          "UI_Talent_U_Qiqi_02.png",
+          "UI_Talent_S_Qiqi_04.png"
+        ],
+        "Skills": {
+          "10351": "Skill_A_01.png",
+          "10352": "Skill_S_Qiqi_01.png",
+          "10353": "Skill_E_Qiqi_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Qiqi.png",
+        "Icon": "UI_AvatarIcon_Qiqi.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Qiqi.png"
+      }
+    }
+  },
+  {
+    "Id": "10000036",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Chongyun_01.png",
+          "UI_Talent_S_Chongyun_02.png",
+          "UI_Talent_U_Chongyun_01.png",
+          "UI_Talent_S_Chongyun_03.png",
+          "UI_Talent_U_Chongyun_02.png",
+          "UI_Talent_S_Chongyun_04.png"
+        ],
+        "Skills": {
+          "10401": "Skill_A_04.png",
+          "10402": "Skill_S_Chongyun_01.png",
+          "10403": "Skill_E_Chongyun_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Chongyun.png",
+        "Icon": "UI_AvatarIcon_Chongyun.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Chongyun.png"
+      }
+    }
+  },
+  {
+    "Id": "10000037",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Ganyu_01.png",
+          "UI_Talent_S_Ganyu_02.png",
+          "UI_Talent_U_Ganyu_01.png",
+          "UI_Talent_S_Ganyu_03.png",
+          "UI_Talent_U_Ganyu_02.png",
+          "UI_Talent_S_Ganyu_04.png"
+        ],
+        "Skills": {
+          "10371": "Skill_A_02.png",
+          "10372": "Skill_S_Ganyu_01.png",
+          "10373": "Skill_E_Ganyu_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "203701": {
+        "SideIcon": "UI_AvatarIcon_Side_GanyuCostumeYu.png",
+        "Icon": "UI_AvatarIcon_GanyuCostumeYu.png",
+        "GachaIcon": "UI_Costume_GanyuCostumeYu.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Ganyu.png",
+        "Icon": "UI_AvatarIcon_Ganyu.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Ganyu.png"
+      }
+    }
+  },
+  {
+    "Id": "10000038",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Albedo_01.png",
+          "UI_Talent_S_Albedo_02.png",
+          "UI_Talent_U_Albedo_01.png",
+          "UI_Talent_S_Albedo_03.png",
+          "UI_Talent_U_Albedo_02.png",
+          "UI_Talent_S_Albedo_04.png"
+        ],
+        "Skills": {
+          "10386": "Skill_A_01.png",
+          "10387": "Skill_S_Albedo_01.png",
+          "10388": "Skill_E_Albedo_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Albedo.png",
+        "Icon": "UI_AvatarIcon_Albedo.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Albedo.png"
+      }
+    }
+  },
+  {
+    "Id": "10000039",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Diona_01.png",
+          "UI_Talent_S_Diona_02.png",
+          "UI_Talent_U_Diona_01.png",
+          "UI_Talent_S_Diona_03.png",
+          "UI_Talent_U_Diona_02.png",
+          "UI_Talent_S_Diona_04.png"
+        ],
+        "Skills": {
+          "10391": "Skill_A_02.png",
+          "10392": "Skill_S_Diona_01.png",
+          "10395": "Skill_E_Diona_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Diona.png",
+        "Icon": "UI_AvatarIcon_Diona.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Diona.png"
+      }
+    }
+  },
+  {
+    "Id": "10000041",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Mona_01.png",
+          "UI_Talent_S_Mona_02.png",
+          "UI_Talent_U_Mona_01.png",
+          "UI_Talent_S_Mona_03.png",
+          "UI_Talent_U_Mona_02.png",
+          "UI_Talent_S_Mona_04.png"
+        ],
+        "Skills": {
+          "10411": "Skill_A_Catalyst_MD.png",
+          "10412": "Skill_S_Mona_01.png",
+          "10415": "Skill_E_Mona_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "204101": {
+        "SideIcon": "UI_AvatarIcon_Side_MonaCostumeWic.png",
+        "Icon": "UI_AvatarIcon_MonaCostumeWic.png",
+        "GachaIcon": "UI_Costume_MonaCostumeWic.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Mona.png",
+        "Icon": "UI_AvatarIcon_Mona.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Mona.png"
+      }
+    }
+  },
+  {
+    "Id": "10000042",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Keqing_01.png",
+          "UI_Talent_S_Keqing_02.png",
+          "UI_Talent_U_Keqing_01.png",
+          "UI_Talent_S_Keqing_03.png",
+          "UI_Talent_U_Keqing_02.png",
+          "UI_Talent_S_Keqing_04.png"
+        ],
+        "Skills": {
+          "10421": "Skill_A_01.png",
+          "10422": "Skill_S_Keqing_01.png",
+          "10425": "Skill_E_Keqing_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "204201": {
+        "SideIcon": "UI_AvatarIcon_Side_KeqingCostumeFeather.png",
+        "Icon": "UI_AvatarIcon_KeqingCostumeFeather.png",
+        "GachaIcon": "UI_Costume_KeqingCostumeFeather.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Keqing.png",
+        "Icon": "UI_AvatarIcon_Keqing.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Keqing.png"
+      }
+    }
+  },
+  {
+    "Id": "10000043",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Sucrose_01.png",
+          "UI_Talent_S_Sucrose_02.png",
+          "UI_Talent_U_Sucrose_01.png",
+          "UI_Talent_S_Sucrose_03.png",
+          "UI_Talent_U_Sucrose_02.png",
+          "UI_Talent_S_Sucrose_04.png"
+        ],
+        "Skills": {
+          "10431": "Skill_A_Catalyst_MD.png",
+          "10432": "Skill_S_Sucrose_01.png",
+          "10435": "Skill_E_Sucrose_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Sucrose.png",
+        "Icon": "UI_AvatarIcon_Sucrose.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Sucrose.png"
+      }
+    }
+  },
+  {
+    "Id": "10000044",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Xinyan_01.png",
+          "UI_Talent_S_Xinyan_02.png",
+          "UI_Talent_U_Xinyan_01.png",
+          "UI_Talent_S_Xinyan_03.png",
+          "UI_Talent_U_Xinyan_02.png",
+          "UI_Talent_S_Xinyan_04.png"
+        ],
+        "Skills": {
+          "10441": "Skill_A_04.png",
+          "10442": "Skill_S_Xinyan_01.png",
+          "10443": "Skill_E_Xinyan_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Xinyan.png",
+        "Icon": "UI_AvatarIcon_Xinyan.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Xinyan.png"
+      }
+    }
+  },
+  {
+    "Id": "10000045",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Rosaria_01.png",
+          "UI_Talent_S_Rosaria_02.png",
+          "UI_Talent_U_Rosaria_01.png",
+          "UI_Talent_S_Rosaria_03.png",
+          "UI_Talent_U_Rosaria_02.png",
+          "UI_Talent_S_Rosaria_04.png"
+        ],
+        "Skills": {
+          "10451": "Skill_A_03.png",
+          "10452": "Skill_S_Rosaria_01.png",
+          "10453": "Skill_E_Rosaria_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "204501": {
+        "SideIcon": "UI_AvatarIcon_Side_RosariaCostumeWic.png",
+        "Icon": "UI_AvatarIcon_RosariaCostumeWic.png",
+        "GachaIcon": "UI_Costume_RosariaCostumeWic.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Rosaria.png",
+        "Icon": "UI_AvatarIcon_Rosaria.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Rosaria.png"
+      }
+    }
+  },
+  {
+    "Id": "10000046",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Hutao_03.png",
+          "UI_Talent_S_Hutao_01.png",
+          "UI_Talent_U_Hutao_01.png",
+          "UI_Talent_S_Hutao_02.png",
+          "UI_Talent_U_Hutao_02.png",
+          "UI_Talent_S_Hutao_04.png"
+        ],
+        "Skills": {
+          "10461": "Skill_A_03.png",
+          "10462": "Skill_S_Hutao_01.png",
+          "10463": "Skill_E_Hutao_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "204601": {
+        "SideIcon": "UI_AvatarIcon_Side_HutaoCostumeWinter.png",
+        "Icon": "UI_AvatarIcon_HutaoCostumeWinter.png",
+        "GachaIcon": "UI_Costume_HutaoCostumeWinter.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Hutao.png",
+        "Icon": "UI_AvatarIcon_Hutao.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Hutao.png"
+      }
+    }
+  },
+  {
+    "Id": "10000047",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Kazuha_01.png",
+          "UI_Talent_S_Kazuha_02.png",
+          "UI_Talent_U_Kazuha_01.png",
+          "UI_Talent_S_Kazuha_03.png",
+          "UI_Talent_U_Kazuha_02.png",
+          "UI_Talent_S_Kazuha_04.png"
+        ],
+        "Skills": {
+          "10471": "Skill_A_01.png",
+          "10472": "Skill_S_Kazuha_01.png",
+          "10475": "Skill_E_Kazuha_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Kazuha.png",
+        "Icon": "UI_AvatarIcon_Kazuha.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Kazuha.png"
+      }
+    }
+  },
+  {
+    "Id": "10000048",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Feiyan_01.png",
+          "UI_Talent_S_Feiyan_02.png",
+          "UI_Talent_U_Feiyan_01.png",
+          "UI_Talent_S_Feiyan_03.png",
+          "UI_Talent_U_Feiyan_02.png",
+          "UI_Talent_S_Feiyan_04.png"
+        ],
+        "Skills": {
+          "10481": "Skill_A_Catalyst_MD.png",
+          "10482": "Skill_S_Feiyan_01.png",
+          "10485": "Skill_E_Feiyan_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Feiyan.png",
+        "Icon": "UI_AvatarIcon_Feiyan.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Feiyan.png"
+      }
+    }
+  },
+  {
+    "Id": "10000049",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Yoimiya_01.png",
+          "UI_Talent_S_Yoimiya_02.png",
+          "UI_Talent_U_Yoimiya_01.png",
+          "UI_Talent_S_Yoimiya_03.png",
+          "UI_Talent_U_Yoimiya_02.png",
+          "UI_Talent_S_Yoimiya_04.png"
+        ],
+        "Skills": {
+          "10491": "Skill_A_02.png",
+          "10492": "Skill_S_Yoimiya_01.png",
+          "10495": "Skill_E_Yoimiya_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Yoimiya.png",
+        "Icon": "UI_AvatarIcon_Yoimiya.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Yoimiya.png"
+      }
+    }
+  },
+  {
+    "Id": "10000050",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Tohma_01.png",
+          "UI_Talent_S_Tohma_02.png",
+          "UI_Talent_U_Tohma_01.png",
+          "UI_Talent_S_Tohma_03.png",
+          "UI_Talent_U_Tohma_02.png",
+          "UI_Talent_S_Tohma_04.png"
+        ],
+        "Skills": {
+          "10501": "Skill_A_03.png",
+          "10502": "Skill_S_Tohma_01.png",
+          "10505": "Skill_E_Tohma_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Tohma.png",
+        "Icon": "UI_AvatarIcon_Tohma.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Tohma.png"
+      }
+    }
+  },
+  {
+    "Id": "10000051",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Eula_02.png",
+          "UI_Talent_S_Eula_01.png",
+          "UI_Talent_U_Eula_01.png",
+          "UI_Talent_S_Eula_03.png",
+          "UI_Talent_U_Eula_02.png",
+          "UI_Talent_S_Eula_04.png"
+        ],
+        "Skills": {
+          "10511": "Skill_A_04.png",
+          "10512": "Skill_S_Eula_01.png",
+          "10515": "Skill_E_Eula_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Eula.png",
+        "Icon": "UI_AvatarIcon_Eula.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Eula.png"
+      }
+    }
+  },
+  {
+    "Id": "10000052",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Shougun_01.png",
+          "UI_Talent_S_Shougun_03.png",
+          "UI_Talent_U_Shougun_02.png",
+          "UI_Talent_S_Shougun_02.png",
+          "UI_Talent_U_Shougun_01.png",
+          "UI_Talent_S_Shougun_04.png"
+        ],
+        "Skills": {
+          "10521": "Skill_A_03.png",
+          "10522": "Skill_S_Shougun_01.png",
+          "10525": "Skill_E_Shougun_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Shougun.png",
+        "Icon": "UI_AvatarIcon_Shougun.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Shougun.png"
+      }
+    }
+  },
+  {
+    "Id": "10000053",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Sayu_01.png",
+          "UI_Talent_S_Sayu_02.png",
+          "UI_Talent_U_Sayu_02.png",
+          "UI_Talent_S_Sayu_03.png",
+          "UI_Talent_U_Sayu_01.png",
+          "UI_Talent_S_Sayu_04.png"
+        ],
+        "Skills": {
+          "10531": "Skill_A_04.png",
+          "10532": "Skill_S_Sayu_01.png",
+          "10535": "Skill_E_Sayu_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Sayu.png",
+        "Icon": "UI_AvatarIcon_Sayu.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Sayu.png"
+      }
+    }
+  },
+  {
+    "Id": "10000054",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Kokomi_01.png",
+          "UI_Talent_S_Kokomi_02.png",
+          "UI_Talent_U_Kokomi_02.png",
+          "UI_Talent_S_Kokomi_03.png",
+          "UI_Talent_U_Kokomi_01.png",
+          "UI_Talent_S_Kokomi_04.png"
+        ],
+        "Skills": {
+          "10541": "Skill_A_Catalyst_MD.png",
+          "10542": "Skill_S_Kokomi_01.png",
+          "10545": "Skill_E_Kokomi_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Kokomi.png",
+        "Icon": "UI_AvatarIcon_Kokomi.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Kokomi.png"
+      }
+    }
+  },
+  {
+    "Id": "10000055",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Gorou_01.png",
+          "UI_Talent_S_Gorou_02.png",
+          "UI_Talent_U_Gorou_01.png",
+          "UI_Talent_S_Gorou_03.png",
+          "UI_Talent_U_Gorou_02.png",
+          "UI_Talent_S_Gorou_04.png"
+        ],
+        "Skills": {
+          "10551": "Skill_A_02.png",
+          "10552": "Skill_S_Gorou_01.png",
+          "10555": "Skill_E_Gorou_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Gorou.png",
+        "Icon": "UI_AvatarIcon_Gorou.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Gorou.png"
+      }
+    }
+  },
+  {
+    "Id": "10000056",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Sara_05.png",
+          "UI_Talent_S_Sara_02.png",
+          "UI_Talent_U_Sara_02.png",
+          "UI_Talent_S_Sara_03.png",
+          "UI_Talent_U_Sara_01.png",
+          "UI_Talent_S_Sara_04.png"
+        ],
+        "Skills": {
+          "10561": "Skill_A_02.png",
+          "10562": "Skill_S_Sara_01.png",
+          "10565": "Skill_E_Sara_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Sara.png",
+        "Icon": "UI_AvatarIcon_Sara.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Sara.png"
+      }
+    }
+  },
+  {
+    "Id": "10000057",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Itto_01.png",
+          "UI_Talent_S_Itto_02.png",
+          "UI_Talent_U_Itto_01.png",
+          "UI_Talent_S_Itto_03.png",
+          "UI_Talent_U_Itto_02.png",
+          "UI_Talent_S_Itto_04.png"
+        ],
+        "Skills": {
+          "10571": "Skill_A_04.png",
+          "10572": "Skill_S_Itto_01.png",
+          "10575": "Skill_E_Itto_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Itto.png",
+        "Icon": "UI_AvatarIcon_Itto.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Itto.png"
+      }
+    }
+  },
+  {
+    "Id": "10000058",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Yae_01.png",
+          "UI_Talent_S_Yae_02.png",
+          "UI_Talent_U_Yae_01.png",
+          "UI_Talent_S_Yae_03.png",
+          "UI_Talent_U_Yae_02.png",
+          "UI_Talent_S_Yae_04.png"
+        ],
+        "Skills": {
+          "10581": "Skill_A_Catalyst_MD.png",
+          "10582": "Skill_S_Yae_01.png",
+          "10585": "Skill_E_Yae_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Yae.png",
+        "Icon": "UI_AvatarIcon_Yae.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Yae.png"
+      }
+    }
+  },
+  {
+    "Id": "10000059",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Heizo_01.png",
+          "UI_Talent_S_Heizo_02.png",
+          "UI_Talent_U_Heizo_01.png",
+          "UI_Talent_S_Heizo_03.png",
+          "UI_Talent_U_Heizo_02.png",
+          "UI_Talent_S_Heizo_04.png"
+        ],
+        "Skills": {
+          "10591": "Skill_A_Catalyst_MD.png",
+          "10592": "Skill_S_Heizo_01.png",
+          "10595": "Skill_E_Heizo_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Heizo.png",
+        "Icon": "UI_AvatarIcon_Heizo.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Heizo.png"
+      }
+    }
+  },
+  {
+    "Id": "10000060",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Yelan_01.png",
+          "UI_Talent_S_Yelan_02.png",
+          "UI_Talent_U_Yelan_01.png",
+          "UI_Talent_S_Yelan_03.png",
+          "UI_Talent_U_Yelan_02.png",
+          "UI_Talent_S_Yelan_04.png"
+        ],
+        "Skills": {
+          "10606": "Skill_A_02.png",
+          "10607": "Skill_S_Yelan_01.png",
+          "10610": "Skill_E_Yelan_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "206001": {
+        "SideIcon": "UI_AvatarIcon_Side_YelanCostumeSummer.png",
+        "Icon": "UI_AvatarIcon_YelanCostumeSummer.png",
+        "GachaIcon": "UI_Costume_YelanCostumeSummer.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Yelan.png",
+        "Icon": "UI_AvatarIcon_Yelan.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Yelan.png"
+      }
+    }
+  },
+  {
+    "Id": "10000061",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Momoka_01.png",
+          "UI_Talent_S_Momoka_02.png",
+          "UI_Talent_U_Momoka_01.png",
+          "UI_Talent_S_Momoka_04.png",
+          "UI_Talent_U_Momoka_02.png",
+          "UI_Talent_S_Momoka_03.png"
+        ],
+        "Skills": {
+          "10611": "Skill_A_01.png",
+          "10612": "Skill_S_Momoka_01.png",
+          "10615": "Skill_E_Momoka_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "206101": {
+        "SideIcon": "UI_AvatarIcon_Side_MomokaCostumeErrantry.png",
+        "Icon": "UI_AvatarIcon_MomokaCostumeErrantry.png",
+        "GachaIcon": "UI_Costume_MomokaCostumeErrantry.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Momoka.png",
+        "Icon": "UI_AvatarIcon_Momoka.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Momoka.png"
+      }
+    }
+  },
+  {
+    "Id": "10000062",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Aloy_Lock.png",
+          "UI_Talent_S_Aloy_Lock.png",
+          "UI_Talent_S_Aloy_Lock.png",
+          "UI_Talent_S_Aloy_Lock.png",
+          "UI_Talent_S_Aloy_Lock.png",
+          "UI_Talent_S_Aloy_Lock.png"
+        ],
+        "Skills": {
+          "10621": "Skill_A_02.png",
+          "10622": "Skill_S_Aloy_01.png",
+          "10625": "Skill_E_Aloy_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Aloy.png",
+        "Icon": "UI_AvatarIcon_Aloy.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Aloy.png"
+      }
+    }
+  },
+  {
+    "Id": "10000063",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Shenhe_02.png",
+          "UI_Talent_S_Shenhe_01.png",
+          "UI_Talent_U_Shenhe_01.png",
+          "UI_Talent_S_Shenhe_03.png",
+          "UI_Talent_U_Shenhe_02.png",
+          "UI_Talent_S_Shenhe_04.png"
+        ],
+        "Skills": {
+          "10631": "Skill_A_03.png",
+          "10632": "Skill_S_Shenhe_01.png",
+          "10635": "Skill_E_Shenhe_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "206301": {
+        "SideIcon": "UI_AvatarIcon_Side_ShenheCostumeDai.png",
+        "Icon": "UI_AvatarIcon_ShenheCostumeDai.png",
+        "GachaIcon": "UI_Costume_ShenheCostumeDai.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Shenhe.png",
+        "Icon": "UI_AvatarIcon_Shenhe.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Shenhe.png"
+      }
+    }
+  },
+  {
+    "Id": "10000064",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Yunjin_01.png",
+          "UI_Talent_S_Yunjin_02.png",
+          "UI_Talent_U_Yunjin_01.png",
+          "UI_Talent_S_Yunjin_03.png",
+          "UI_Talent_U_Yunjin_02.png",
+          "UI_Talent_S_Yunjin_04.png"
+        ],
+        "Skills": {
+          "10641": "Skill_A_03.png",
+          "10642": "Skill_S_Yunjin_01.png",
+          "10643": "Skill_E_Yunjin_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Yunjin.png",
+        "Icon": "UI_AvatarIcon_Yunjin.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Yunjin.png"
+      }
+    }
+  },
+  {
+    "Id": "10000065",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Shinobu_01.png",
+          "UI_Talent_S_Shinobu_02.png",
+          "UI_Talent_U_Shinobu_01.png",
+          "UI_Talent_S_Shinobu_03.png",
+          "UI_Talent_U_Shinobu_02.png",
+          "UI_Talent_S_Shinobu_04.png"
+        ],
+        "Skills": {
+          "10651": "Skill_A_01.png",
+          "10652": "Skill_S_Shinobu_01.png",
+          "10655": "Skill_E_Shinobu_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Shinobu.png",
+        "Icon": "UI_AvatarIcon_Shinobu.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Shinobu.png"
+      }
+    }
+  },
+  {
+    "Id": "10000066",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Ayato_01.png",
+          "UI_Talent_S_Ayato_02.png",
+          "UI_Talent_U_Ayato_02.png",
+          "UI_Talent_S_Ayato_03.png",
+          "UI_Talent_U_Ayato_01.png",
+          "UI_Talent_S_Ayato_04.png"
+        ],
+        "Skills": {
+          "10661": "Skill_A_01.png",
+          "10662": "Skill_S_Ayato_01.png",
+          "10665": "Skill_E_Ayato_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Ayato.png",
+        "Icon": "UI_AvatarIcon_Ayato.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Ayato.png"
+      }
+    }
+  },
+  {
+    "Id": "10000067",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Collei_01.png",
+          "UI_Talent_S_Collei_02.png",
+          "UI_Talent_U_Collei_02.png",
+          "UI_Talent_S_Collei_03.png",
+          "UI_Talent_U_Collei_01.png",
+          "UI_Talent_S_Collei_04.png"
+        ],
+        "Skills": {
+          "10671": "Skill_A_02.png",
+          "10672": "Skill_S_Collei_01.png",
+          "10675": "Skill_E_Collei_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Collei.png",
+        "Icon": "UI_AvatarIcon_Collei.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Collei.png"
+      }
+    }
+  },
+  {
+    "Id": "10000068",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Dori_01.png",
+          "UI_Talent_S_Dori_02.png",
+          "UI_Talent_U_Dori_02.png",
+          "UI_Talent_S_Dori_03.png",
+          "UI_Talent_U_Dori_01.png",
+          "UI_Talent_S_Dori_04.png"
+        ],
+        "Skills": {
+          "10681": "Skill_A_04.png",
+          "10682": "Skill_S_Dori_01.png",
+          "10685": "Skill_E_Dori_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Dori.png",
+        "Icon": "UI_AvatarIcon_Dori.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Dori.png"
+      }
+    }
+  },
+  {
+    "Id": "10000069",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Tighnari_01.png",
+          "UI_Talent_S_Tighnari_02.png",
+          "UI_Talent_U_Tighnari_01.png",
+          "UI_Talent_S_Tighnari_03.png",
+          "UI_Talent_U_Tighnari_02.png",
+          "UI_Talent_S_Tighnari_04.png"
+        ],
+        "Skills": {
+          "10691": "Skill_A_02.png",
+          "10692": "Skill_S_Tighnari_01.png",
+          "10695": "Skill_E_Tighnari_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Tighnari.png",
+        "Icon": "UI_AvatarIcon_Tighnari.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Tighnari.png"
+      }
+    }
+  },
+  {
+    "Id": "10000070",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Nilou_01.png",
+          "UI_Talent_S_Nilou_02.png",
+          "UI_Talent_U_Nilou_01.png",
+          "UI_Talent_S_Nilou_03.png",
+          "UI_Talent_U_Nilou_02.png",
+          "UI_Talent_S_Nilou_04.png"
+        ],
+        "Skills": {
+          "10701": "Skill_A_01.png",
+          "10702": "Skill_S_Nilou_01.png",
+          "10705": "Skill_E_Nilou_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "207001": {
+        "SideIcon": "UI_AvatarIcon_Side_NilouCostumeFairy.png",
+        "Icon": "UI_AvatarIcon_NilouCostumeFairy.png",
+        "GachaIcon": "UI_Costume_NilouCostumeFairy.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Nilou.png",
+        "Icon": "UI_AvatarIcon_Nilou.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Nilou.png"
+      }
+    }
+  },
+  {
+    "Id": "10000071",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Cyno_01.png",
+          "UI_Talent_S_Cyno_02.png",
+          "UI_Talent_U_Cyno_01.png",
+          "UI_Talent_S_Cyno_03.png",
+          "UI_Talent_U_Cyno_02.png",
+          "UI_Talent_S_Cyno_04.png"
+        ],
+        "Skills": {
+          "10711": "Skill_A_03.png",
+          "10712": "Skill_S_Cyno_01.png",
+          "10715": "Skill_E_Cyno_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Cyno.png",
+        "Icon": "UI_AvatarIcon_Cyno.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Cyno.png"
+      }
+    }
+  },
+  {
+    "Id": "10000072",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Candace_01.png",
+          "UI_Talent_S_Candace_02.png",
+          "UI_Talent_U_Candace_01.png",
+          "UI_Talent_S_Candace_03.png",
+          "UI_Talent_U_Candace_02.png",
+          "UI_Talent_S_Candace_04.png"
+        ],
+        "Skills": {
+          "10721": "Skill_A_03.png",
+          "10722": "Skill_S_Candace_01.png",
+          "10725": "Skill_E_Candace_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Candace.png",
+        "Icon": "UI_AvatarIcon_Candace.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Candace.png"
+      }
+    }
+  },
+  {
+    "Id": "10000073",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Nahida_01.png",
+          "UI_Talent_S_Nahida_02.png",
+          "UI_Talent_U_Nahida_01.png",
+          "UI_Talent_S_Nahida_03.png",
+          "UI_Talent_U_Nahida_02.png",
+          "UI_Talent_S_Nahida_04.png"
+        ],
+        "Skills": {
+          "10731": "Skill_A_Catalyst_MD.png",
+          "10732": "Skill_S_Nahida_01.png",
+          "10735": "Skill_E_Nahida_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Nahida.png",
+        "Icon": "UI_AvatarIcon_Nahida.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Nahida.png"
+      }
+    }
+  },
+  {
+    "Id": "10000074",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Layla_01.png",
+          "UI_Talent_S_Layla_02.png",
+          "UI_Talent_U_Layla_01.png",
+          "UI_Talent_S_Layla_03.png",
+          "UI_Talent_U_Layla_02.png",
+          "UI_Talent_S_Layla_04.png"
+        ],
+        "Skills": {
+          "10741": "Skill_A_01.png",
+          "10742": "Skill_S_Layla_01.png",
+          "10745": "Skill_E_Layla_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Layla.png",
+        "Icon": "UI_AvatarIcon_Layla.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Layla.png"
+      }
+    }
+  },
+  {
+    "Id": "10000075",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Wanderer_01.png",
+          "UI_Talent_S_Wanderer_02.png",
+          "UI_Talent_U_Wanderer_02.png",
+          "UI_Talent_S_Wanderer_03.png",
+          "UI_Talent_U_Wanderer_01.png",
+          "UI_Talent_S_Wanderer_04.png"
+        ],
+        "Skills": {
+          "10751": "Skill_A_Catalyst_MD.png",
+          "10752": "Skill_S_Wanderer_01.png",
+          "10755": "Skill_E_Wanderer_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Wanderer.png",
+        "Icon": "UI_AvatarIcon_Wanderer.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Wanderer.png"
+      }
+    }
+  },
+  {
+    "Id": "10000076",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Faruzan_01.png",
+          "UI_Talent_S_Faruzan_02.png",
+          "UI_Talent_U_Faruzan_01.png",
+          "UI_Talent_S_Faruzan_03.png",
+          "UI_Talent_U_Faruzan_02.png",
+          "UI_Talent_S_Faruzan_04.png"
+        ],
+        "Skills": {
+          "10761": "Skill_A_02.png",
+          "10762": "Skill_S_Faruzan_01.png",
+          "10765": "Skill_E_Faruzan_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Faruzan.png",
+        "Icon": "UI_AvatarIcon_Faruzan.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Faruzan.png"
+      }
+    }
+  },
+  {
+    "Id": "10000077",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Yaoyao_01.png",
+          "UI_Talent_S_Yaoyao_02.png",
+          "UI_Talent_U_Yaoyao_01.png",
+          "UI_Talent_S_Yaoyao_03.png",
+          "UI_Talent_U_Yaoyao_02.png",
+          "UI_Talent_S_Yaoyao_04.png"
+        ],
+        "Skills": {
+          "10771": "Skill_A_03.png",
+          "10772": "Skill_S_Yaoyao_01.png",
+          "10775": "Skill_E_Yaoyao_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Yaoyao.png",
+        "Icon": "UI_AvatarIcon_Yaoyao.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Yaoyao.png"
+      }
+    }
+  },
+  {
+    "Id": "10000078",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Alhatham_02.png",
+          "UI_Talent_S_Alhatham_01.png",
+          "UI_Talent_U_Alhatham_01.png",
+          "UI_Talent_S_Alhatham_03.png",
+          "UI_Talent_U_Alhatham_02.png",
+          "UI_Talent_S_Alhatham_04.png"
+        ],
+        "Skills": {
+          "10781": "Skill_A_01.png",
+          "10782": "Skill_S_Alhatham_01.png",
+          "10785": "Skill_E_Alhatham_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Alhatham.png",
+        "Icon": "UI_AvatarIcon_Alhatham.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Alhatham.png"
+      }
+    }
+  },
+  {
+    "Id": "10000079",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Dehya_01.png",
+          "UI_Talent_S_Dehya_02.png",
+          "UI_Talent_U_Dehya_01.png",
+          "UI_Talent_S_Dehya_03.png",
+          "UI_Talent_U_Dehya_02.png",
+          "UI_Talent_S_Dehya_04.png"
+        ],
+        "Skills": {
+          "10791": "Skill_A_04.png",
+          "10792": "Skill_S_Dehya_01.png",
+          "10795": "Skill_E_Dehya_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Dehya.png",
+        "Icon": "UI_AvatarIcon_Dehya.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Dehya.png"
+      }
+    }
+  },
+  {
+    "Id": "10000080",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Mika_01.png",
+          "UI_Talent_S_Mika_02.png",
+          "UI_Talent_U_Mika_01.png",
+          "UI_Talent_S_Mika_03.png",
+          "UI_Talent_U_Mika_02.png",
+          "UI_Talent_S_Mika_04.png"
+        ],
+        "Skills": {
+          "10801": "Skill_A_03.png",
+          "10802": "Skill_S_Mika_01.png",
+          "10805": "Skill_E_Mika_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Mika.png",
+        "Icon": "UI_AvatarIcon_Mika.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Mika.png"
+      }
+    }
+  },
+  {
+    "Id": "10000081",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Kaveh_01.png",
+          "UI_Talent_S_Kaveh_02.png",
+          "UI_Talent_U_Kaveh_02.png",
+          "UI_Talent_S_Kaveh_03.png",
+          "UI_Talent_U_Kaveh_01.png",
+          "UI_Talent_S_Kaveh_04.png"
+        ],
+        "Skills": {
+          "10811": "Skill_A_04.png",
+          "10812": "Skill_S_Kaveh_01.png",
+          "10815": "Skill_E_Kaveh_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Kaveh.png",
+        "Icon": "UI_AvatarIcon_Kaveh.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Kaveh.png"
+      }
+    }
+  },
+  {
+    "Id": "10000082",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Baizhuer_01.png",
+          "UI_Talent_S_Baizhuer_02.png",
+          "UI_Talent_U_Baizhuer_01.png",
+          "UI_Talent_S_Baizhuer_03.png",
+          "UI_Talent_U_Baizhuer_02.png",
+          "UI_Talent_S_Baizhuer_04.png"
+        ],
+        "Skills": {
+          "10821": "Skill_A_Catalyst_MD.png",
+          "10822": "Skill_S_Baizhuer_01.png",
+          "10825": "Skill_E_Baizhuer_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Baizhuer.png",
+        "Icon": "UI_AvatarIcon_Baizhuer.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Baizhuer.png"
+      }
+    }
+  },
+  {
+    "Id": "10000083",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Linette_01.png",
+          "UI_Talent_S_Linette_02.png",
+          "UI_Talent_U_Linette_01.png",
+          "UI_Talent_S_Linette_03.png",
+          "UI_Talent_U_Linette_02.png",
+          "UI_Talent_S_Linette_04.png"
+        ],
+        "Skills": {
+          "10831": "Skill_A_01.png",
+          "10832": "Skill_S_Linette_01.png",
+          "10835": "Skill_E_Linette_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Linette.png",
+        "Icon": "UI_AvatarIcon_Linette.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Linette.png"
+      }
+    }
+  },
+  {
+    "Id": "10000084",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Liney_01.png",
+          "UI_Talent_S_Liney_03.png",
+          "UI_Talent_U_Liney_01.png",
+          "UI_Talent_S_Liney_02.png",
+          "UI_Talent_U_Liney_02.png",
+          "UI_Talent_S_Liney_04.png"
+        ],
+        "Skills": {
+          "10841": "Skill_A_02.png",
+          "10842": "Skill_S_Liney_01.png",
+          "10845": "Skill_E_Liney_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Liney.png",
+        "Icon": "UI_AvatarIcon_Liney.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Liney.png"
+      }
+    }
+  },
+  {
+    "Id": "10000085",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Freminet_01.png",
+          "UI_Talent_S_Freminet_02.png",
+          "UI_Talent_U_Freminet_01.png",
+          "UI_Talent_S_Freminet_03.png",
+          "UI_Talent_U_Freminet_02.png",
+          "UI_Talent_S_Freminet_04.png"
+        ],
+        "Skills": {
+          "10851": "Skill_A_04.png",
+          "10852": "Skill_S_Freminet_01.png",
+          "10855": "Skill_E_Freminet_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Freminet.png",
+        "Icon": "UI_AvatarIcon_Freminet.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Freminet.png"
+      }
+    }
+  },
+  {
+    "Id": "10000086",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Wriothesley_01.png",
+          "UI_Talent_S_Wriothesley_02.png",
+          "UI_Talent_U_Wriothesley_01.png",
+          "UI_Talent_S_Wriothesley_03.png",
+          "UI_Talent_U_Wriothesley_02.png",
+          "UI_Talent_S_Wriothesley_04.png"
+        ],
+        "Skills": {
+          "10861": "Skill_A_Catalyst_MD.png",
+          "10862": "Skill_S_Wriothesley_01.png",
+          "10865": "Skill_E_Wriothesley_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Wriothesley.png",
+        "Icon": "UI_AvatarIcon_Wriothesley.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Wriothesley.png"
+      }
+    }
+  },
+  {
+    "Id": "10000087",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Neuvillette_01.png",
+          "UI_Talent_S_Neuvillette_02.png",
+          "UI_Talent_U_Neuvillette_01.png",
+          "UI_Talent_S_Neuvillette_03.png",
+          "UI_Talent_U_Neuvillette_02.png",
+          "UI_Talent_S_Neuvillette_04.png"
+        ],
+        "Skills": {
+          "10871": "Skill_A_Catalyst_MD.png",
+          "10872": "Skill_S_Neuvillette_01.png",
+          "10875": "Skill_E_Neuvillette_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Neuvillette.png",
+        "Icon": "UI_AvatarIcon_Neuvillette.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Neuvillette.png"
+      }
+    }
+  },
+  {
+    "Id": "10000088",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Charlotte_01.png",
+          "UI_Talent_S_Charlotte_02.png",
+          "UI_Talent_U_Charlotte_01.png",
+          "UI_Talent_S_Charlotte_03.png",
+          "UI_Talent_U_Charlotte_02.png",
+          "UI_Talent_S_Charlotte_04.png"
+        ],
+        "Skills": {
+          "10881": "Skill_A_Catalyst_MD.png",
+          "10882": "Skill_S_Charlotte_01.png",
+          "10885": "Skill_E_Charlotte_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Charlotte.png",
+        "Icon": "UI_AvatarIcon_Charlotte.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Charlotte.png"
+      }
+    }
+  },
+  {
+    "Id": "10000089",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Furina_01.png",
+          "UI_Talent_S_Furina_04.png",
+          "UI_Talent_U_Furina_02.png",
+          "UI_Talent_S_Furina_03.png",
+          "UI_Talent_U_Furina_01.png",
+          "UI_Talent_S_Furina_02.png"
+        ],
+        "Skills": {
+          "10891": "Skill_A_01.png",
+          "10892": "Skill_S_Furina_01.png",
+          "10895": "Skill_E_Furina_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Furina.png",
+        "Icon": "UI_AvatarIcon_Furina.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Furina.png"
+      }
+    }
+  },
+  {
+    "Id": "10000090",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Chevreuse_01.png",
+          "UI_Talent_S_Chevreuse_02.png",
+          "UI_Talent_U_Chevreuse_01.png",
+          "UI_Talent_S_Chevreuse_03.png",
+          "UI_Talent_U_Chevreuse_02.png",
+          "UI_Talent_S_Chevreuse_04.png"
+        ],
+        "Skills": {
+          "10901": "Skill_A_03.png",
+          "10902": "Skill_S_Chevreuse_01.png",
+          "10905": "Skill_E_Chevreuse_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Chevreuse.png",
+        "Icon": "UI_AvatarIcon_Chevreuse.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Chevreuse.png"
+      }
+    }
+  },
+  {
+    "Id": "10000091",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Navia_01.png",
+          "UI_Talent_S_Navia_02.png",
+          "UI_Talent_U_Navia_01.png",
+          "UI_Talent_S_Navia_03.png",
+          "UI_Talent_U_Navia_02.png",
+          "UI_Talent_S_Navia_04.png"
+        ],
+        "Skills": {
+          "10911": "Skill_A_04.png",
+          "10912": "Skill_S_Navia_01.png",
+          "10915": "Skill_E_Navia_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Navia.png",
+        "Icon": "UI_AvatarIcon_Navia.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Navia.png"
+      }
+    }
+  },
+  {
+    "Id": "10000092",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Gaming_01.png",
+          "UI_Talent_S_Gaming_02.png",
+          "UI_Talent_U_Gaming_01.png",
+          "UI_Talent_S_Gaming_03.png",
+          "UI_Talent_U_Gaming_02.png",
+          "UI_Talent_S_Gaming_04.png"
+        ],
+        "Skills": {
+          "10921": "Skill_A_04.png",
+          "10922": "Skill_S_Gaming_01.png",
+          "10925": "Skill_E_Gaming_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Gaming.png",
+        "Icon": "UI_AvatarIcon_Gaming.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Gaming.png"
+      }
+    }
+  },
+  {
+    "Id": "10000093",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Liuyun_01.png",
+          "UI_Talent_S_Liuyun_02.png",
+          "UI_Talent_U_Liuyun_02.png",
+          "UI_Talent_S_Liuyun_03.png",
+          "UI_Talent_U_Liuyun_01.png",
+          "UI_Talent_S_Liuyun_04.png"
+        ],
+        "Skills": {
+          "10931": "Skill_A_Catalyst_MD.png",
+          "10932": "Skill_S_Liuyun_01.png",
+          "10935": "Skill_E_Liuyun_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Liuyun.png",
+        "Icon": "UI_AvatarIcon_Liuyun.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Liuyun.png"
+      }
+    }
+  },
+  {
+    "Id": "10000094",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Chiori_01.png",
+          "UI_Talent_S_Chiori_03.png",
+          "UI_Talent_U_Chiori_01.png",
+          "UI_Talent_S_Chiori_02.png",
+          "UI_Talent_U_Chiori_02.png",
+          "UI_Talent_S_Chiori_04.png"
+        ],
+        "Skills": {
+          "10941": "Skill_A_01.png",
+          "10942": "Skill_S_Chiori_01.png",
+          "10945": "Skill_E_Chiori_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Chiori.png",
+        "Icon": "UI_AvatarIcon_Chiori.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Chiori.png"
+      }
+    }
+  },
+  {
+    "Id": "10000095",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Sigewinne_01.png",
+          "UI_Talent_S_Sigewinne_02.png",
+          "UI_Talent_U_Sigewinne_01.png",
+          "UI_Talent_S_Sigewinne_03.png",
+          "UI_Talent_U_Sigewinne_02.png",
+          "UI_Talent_S_Sigewinne_04.png"
+        ],
+        "Skills": {
+          "10951": "Skill_A_02.png",
+          "10952": "Skill_S_Sigewinne_01.png",
+          "10955": "Skill_E_Sigewinne_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Sigewinne.png",
+        "Icon": "UI_AvatarIcon_Sigewinne.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Sigewinne.png"
+      }
+    }
+  },
+  {
+    "Id": "10000096",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Arlecchino_01.png",
+          "UI_Talent_S_Arlecchino_02.png",
+          "UI_Talent_U_Arlecchino_01.png",
+          "UI_Talent_S_Arlecchino_03.png",
+          "UI_Talent_U_Arlecchino_02.png",
+          "UI_Talent_S_Arlecchino_04.png"
+        ],
+        "Skills": {
+          "10961": "Skill_A_03.png",
+          "10962": "Skill_S_Arlecchino_01.png",
+          "10965": "Skill_E_Arlecchino_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Arlecchino.png",
+        "Icon": "UI_AvatarIcon_Arlecchino.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Arlecchino.png"
+      }
+    }
+  },
+  {
+    "Id": "10000097",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Sethos_01.png",
+          "UI_Talent_S_Sethos_02.png",
+          "UI_Talent_U_Sethos_01.png",
+          "UI_Talent_S_Sethos_03.png",
+          "UI_Talent_U_Sethos_02.png",
+          "UI_Talent_S_Sethos_04.png"
+        ],
+        "Skills": {
+          "10971": "Skill_A_02.png",
+          "10972": "Skill_S_Sethos_01.png",
+          "10975": "Skill_E_Sethos_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Sethos.png",
+        "Icon": "UI_AvatarIcon_Sethos.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Sethos.png"
+      }
+    }
+  },
+  {
+    "Id": "10000098",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Clorinde_01.png",
+          "UI_Talent_S_Clorinde_02.png",
+          "UI_Talent_U_Clorinde_02.png",
+          "UI_Talent_S_Clorinde_03.png",
+          "UI_Talent_U_Clorinde_01.png",
+          "UI_Talent_S_Clorinde_04.png"
+        ],
+        "Skills": {
+          "10981": "Skill_A_01.png",
+          "10982": "Skill_S_Clorinde_01.png",
+          "10985": "Skill_E_Clorinde_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Clorinde.png",
+        "Icon": "UI_AvatarIcon_Clorinde.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Clorinde.png"
+      }
+    }
+  },
+  {
+    "Id": "10000099",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Emilie_01.png",
+          "UI_Talent_S_Emilie_02.png",
+          "UI_Talent_U_Emilie_01.png",
+          "UI_Talent_S_Emilie_03.png",
+          "UI_Talent_U_Emilie_02.png",
+          "UI_Talent_S_Emilie_04.png"
+        ],
+        "Skills": {
+          "10991": "Skill_A_03.png",
+          "10992": "Skill_S_Emilie_01.png",
+          "10995": "Skill_E_Emilie_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Emilie.png",
+        "Icon": "UI_AvatarIcon_Emilie.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Emilie.png"
+      }
+    }
+  },
+  {
+    "Id": "10000100",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Kachina_01.png",
+          "UI_Talent_S_Kachina_02.png",
+          "UI_Talent_U_Kachina_01.png",
+          "UI_Talent_S_Kachina_03.png",
+          "UI_Talent_U_Kachina_02.png",
+          "UI_Talent_S_Kachina_04.png"
+        ],
+        "Skills": {
+          "11001": "Skill_A_03.png",
+          "11002": "Skill_S_Kachina_01.png",
+          "11005": "Skill_E_Kachina_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Kachina.png",
+        "Icon": "UI_AvatarIcon_Kachina.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Kachina.png"
+      }
+    }
+  },
+  {
+    "Id": "10000101",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Kinich_01.png",
+          "UI_Talent_S_Kinich_02.png",
+          "UI_Talent_U_Kinich_01.png",
+          "UI_Talent_S_Kinich_03.png",
+          "UI_Talent_U_Kinich_02.png",
+          "UI_Talent_S_Kinich_04.png"
+        ],
+        "Skills": {
+          "11011": "Skill_A_04.png",
+          "11012": "Skill_S_Kinich_01.png",
+          "11015": "Skill_E_Kinich_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Kinich.png",
+        "Icon": "UI_AvatarIcon_Kinich.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Kinich.png"
+      }
+    }
+  },
+  {
+    "Id": "10000102",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Mualani_01.png",
+          "UI_Talent_S_Mualani_02.png",
+          "UI_Talent_U_Mualani_01.png",
+          "UI_Talent_S_Mualani_03.png",
+          "UI_Talent_U_Mualani_02.png",
+          "UI_Talent_S_Mualani_04.png"
+        ],
+        "Skills": {
+          "30000": "Skill_A_Catalyst_MD.png",
+          "30002": "Skill_S_Mualani_01.png",
+          "30007": "Skill_E_Mualani_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Mualani.png",
+        "Icon": "UI_AvatarIcon_Mualani.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Mualani.png"
+      }
+    }
+  },
+  {
+    "Id": "10000103",
+    "Elements": [
+      {
+        "Element": "geo",
+        "Consts": [
+          "UI_Talent_S_Xilonen_01.png",
+          "UI_Talent_S_Xilonen_02.png",
+          "UI_Talent_U_Xilonen_01.png",
+          "UI_Talent_S_Xilonen_03.png",
+          "UI_Talent_U_Xilonen_02.png",
+          "UI_Talent_S_Xilonen_04.png"
+        ],
+        "Skills": {
+          "11031": "Skill_A_01.png",
+          "11032": "Skill_S_Xilonen_01.png",
+          "11035": "Skill_E_Xilonen_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Xilonen.png",
+        "Icon": "UI_AvatarIcon_Xilonen.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Xilonen.png"
+      }
+    }
+  },
+  {
+    "Id": "10000104",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Chasca_01.png",
+          "UI_Talent_S_Chasca_02.png",
+          "UI_Talent_U_Chasca_01.png",
+          "UI_Talent_S_Chasca_03.png",
+          "UI_Talent_U_Chasca_02.png",
+          "UI_Talent_S_Chasca_04.png"
+        ],
+        "Skills": {
+          "11041": "Skill_A_02.png",
+          "11042": "Skill_S_Chasca_01.png",
+          "11045": "Skill_E_Chasca_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Chasca.png",
+        "Icon": "UI_AvatarIcon_Chasca.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Chasca.png"
+      }
+    }
+  },
+  {
+    "Id": "10000105",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Olorun_01.png",
+          "UI_Talent_S_Olorun_02.png",
+          "UI_Talent_U_Olorun_01.png",
+          "UI_Talent_S_Olorun_03.png",
+          "UI_Talent_U_Olorun_02.png",
+          "UI_Talent_S_Olorun_04.png"
+        ],
+        "Skills": {
+          "30501": "Skill_A_02.png",
+          "30502": "Skill_S_Olorun_01.png",
+          "30505": "Skill_E_Olorun_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Olorun.png",
+        "Icon": "UI_AvatarIcon_Olorun.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Olorun.png"
+      }
+    }
+  },
+  {
+    "Id": "10000106",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Mavuika_01.png",
+          "UI_Talent_S_Mavuika_02.png",
+          "UI_Talent_U_Mavuika_01.png",
+          "UI_Talent_S_Mavuika_03.png",
+          "UI_Talent_U_Mavuika_02.png",
+          "UI_Talent_S_Mavuika_04.png"
+        ],
+        "Skills": {
+          "11061": "Skill_A_04.png",
+          "11062": "Skill_S_Mavuika_01.png",
+          "11065": "Skill_E_Mavuika_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Mavuika.png",
+        "Icon": "UI_AvatarIcon_Mavuika.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Mavuika.png"
+      }
+    }
+  },
+  {
+    "Id": "10000107",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Citlali_01.png",
+          "UI_Talent_S_Citlali_02.png",
+          "UI_Talent_U_Citlali_01.png",
+          "UI_Talent_S_Citlali_03.png",
+          "UI_Talent_U_Citlali_02.png",
+          "UI_Talent_S_Citlali_04.png"
+        ],
+        "Skills": {
+          "11071": "Skill_A_Catalyst_MD.png",
+          "11072": "Skill_S_Citlali_01.png",
+          "11075": "Skill_E_Citlali_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Citlali.png",
+        "Icon": "UI_AvatarIcon_Citlali.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Citlali.png"
+      }
+    }
+  },
+  {
+    "Id": "10000108",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Lanyan_01.png",
+          "UI_Talent_S_Lanyan_02.png",
+          "UI_Talent_U_Lanyan_01.png",
+          "UI_Talent_S_Lanyan_03.png",
+          "UI_Talent_U_Lanyan_02.png",
+          "UI_Talent_S_Lanyan_04.png"
+        ],
+        "Skills": {
+          "11081": "Skill_A_Catalyst_MD.png",
+          "11082": "Skill_S_Lanyan_01.png",
+          "11085": "Skill_E_Lanyan_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Lanyan.png",
+        "Icon": "UI_AvatarIcon_Lanyan.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Lanyan.png"
+      }
+    }
+  },
+  {
+    "Id": "10000109",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Mizuki_01.png",
+          "UI_Talent_S_Mizuki_02.png",
+          "UI_Talent_U_Mizuki_01.png",
+          "UI_Talent_S_Mizuki_03.png",
+          "UI_Talent_U_Mizuki_02.png",
+          "UI_Talent_S_Mizuki_04.png"
+        ],
+        "Skills": {
+          "11091": "Skill_A_Catalyst_MD.png",
+          "11092": "Skill_S_Mizuki_01.png",
+          "11095": "Skill_E_Mizuki_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Mizuki.png",
+        "Icon": "UI_AvatarIcon_Mizuki.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Mizuki.png"
+      }
+    }
+  },
+  {
+    "Id": "10000110",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Iansan_01.png",
+          "UI_Talent_S_Iansan_02.png",
+          "UI_Talent_U_Iansan_01.png",
+          "UI_Talent_S_Iansan_03.png",
+          "UI_Talent_U_Iansan_02.png",
+          "UI_Talent_S_Iansan_04.png"
+        ],
+        "Skills": {
+          "11101": "Skill_A_03.png",
+          "11102": "Skill_S_Iansan_01.png",
+          "11105": "Skill_E_Iansan_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Iansan.png",
+        "Icon": "UI_AvatarIcon_Iansan.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Iansan.png"
+      }
+    }
+  },
+  {
+    "Id": "10000111",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Varesa_01.png",
+          "UI_Talent_S_Varesa_02.png",
+          "UI_Talent_U_Varesa_01.png",
+          "UI_Talent_S_Varesa_03.png",
+          "UI_Talent_U_Varesa_02.png",
+          "UI_Talent_S_Varesa_04.png"
+        ],
+        "Skills": {
+          "11111": "Skill_A_Catalyst_MD.png",
+          "11112": "Skill_S_Varesa_01.png",
+          "11115": "Skill_E_Varesa_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Varesa.png",
+        "Icon": "UI_AvatarIcon_Varesa.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Varesa.png"
+      }
+    }
+  },
+  {
+    "Id": "10000112",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_Escoffier_01.png",
+          "UI_Talent_S_Escoffier_02.png",
+          "UI_Talent_U_Escoffier_01.png",
+          "UI_Talent_S_Escoffier_03.png",
+          "UI_Talent_U_Escoffier_02.png",
+          "UI_Talent_S_Escoffier_04.png"
+        ],
+        "Skills": {
+          "11121": "Skill_A_03.png",
+          "11122": "Skill_S_Escoffier_01.png",
+          "11125": "Skill_E_Escoffier_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Escoffier.png",
+        "Icon": "UI_AvatarIcon_Escoffier.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Escoffier.png"
+      }
+    }
+  },
+  {
+    "Id": "10000113",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Ifa_01.png",
+          "UI_Talent_S_Ifa_02.png",
+          "UI_Talent_U_Ifa_01.png",
+          "UI_Talent_S_Ifa_03.png",
+          "UI_Talent_U_Ifa_02.png",
+          "UI_Talent_S_Ifa_04.png"
+        ],
+        "Skills": {
+          "11131": "Skill_A_Catalyst_MD.png",
+          "11132": "Skill_S_Ifa_01.png",
+          "11135": "Skill_E_Ifa_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Ifa.png",
+        "Icon": "UI_AvatarIcon_Ifa.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Ifa.png"
+      }
+    }
+  },
+  {
+    "Id": "10000114",
+    "Elements": [
+      {
+        "Element": "cryo",
+        "Consts": [
+          "UI_Talent_S_SkirkNew_01.png",
+          "UI_Talent_S_SkirkNew_02.png",
+          "UI_Talent_U_SkirkNew_01.png",
+          "UI_Talent_S_SkirkNew_03.png",
+          "UI_Talent_U_SkirkNew_02.png",
+          "UI_Talent_S_SkirkNew_04.png"
+        ],
+        "Skills": {
+          "11141": "Skill_A_01.png",
+          "11142": "Skill_S_SkirkNew_01.png",
+          "11145": "Skill_E_SkirkNew_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_SkirkNew.png",
+        "Icon": "UI_AvatarIcon_SkirkNew.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_SkirkNew.png"
+      }
+    }
+  },
+  {
+    "Id": "10000115",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Dahlia_01.png",
+          "UI_Talent_S_Dahlia_02.png",
+          "UI_Talent_U_Dahlia_01.png",
+          "UI_Talent_S_Dahlia_03.png",
+          "UI_Talent_U_Dahlia_02.png",
+          "UI_Talent_S_Dahlia_04.png"
+        ],
+        "Skills": {
+          "11151": "Skill_A_01.png",
+          "11152": "Skill_S_Dahlia_01.png",
+          "11155": "Skill_E_Dahlia_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Dahlia.png",
+        "Icon": "UI_AvatarIcon_Dahlia.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Dahlia.png"
+      }
+    }
+  },
+  {
+    "Id": "10000116",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Ineffa_01.png",
+          "UI_Talent_S_Ineffa_02.png",
+          "UI_Talent_U_Ineffa_01.png",
+          "UI_Talent_S_Ineffa_03.png",
+          "UI_Talent_U_Ineffa_02.png",
+          "UI_Talent_S_Ineffa_04.png"
+        ],
+        "Skills": {
+          "11161": "Skill_A_03.png",
+          "11162": "Skill_S_Ineffa_01.png",
+          "11165": "Skill_E_Ineffa_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Ineffa.png",
+        "Icon": "UI_AvatarIcon_Ineffa.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Ineffa.png"
+      }
+    }
+  },
+  {
+    "Id": "10000117",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111751": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "hydro",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111752": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "electro",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111753": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "cryo",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111754": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "anemo",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111755": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "geo",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111756": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "dendro",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111757": "Skill_E_LittleIdol_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_MannequinBoy.png",
+        "Icon": "UI_AvatarIcon_MannequinBoy.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_MannequinBoy.png"
+      }
+    }
+  },
+  {
+    "Id": "10000118",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111751": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "hydro",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111752": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "electro",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111753": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "cryo",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111754": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "anemo",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111755": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "geo",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111756": "Skill_E_LittleIdol_01.png"
+        }
+      },
+      {
+        "Element": "dendro",
+        "Consts": [
+          "None",
+          "None",
+          "None",
+          "None",
+          "None",
+          "None"
+        ],
+        "Skills": {
+          "11171": "Skill_A_01.png",
+          "11172": "Skill_S_LittleIdol_01.png",
+          "111757": "Skill_E_LittleIdol_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_MannequinGirl.png",
+        "Icon": "UI_AvatarIcon_MannequinGirl.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_MannequinGirl.png"
+      }
+    }
+  },
+  {
+    "Id": "10000119",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Lauma_01.png",
+          "UI_Talent_S_Lauma_02.png",
+          "UI_Talent_U_Lauma_01.png",
+          "UI_Talent_S_Lauma_03.png",
+          "UI_Talent_U_Lauma_02.png",
+          "UI_Talent_S_Lauma_04.png"
+        ],
+        "Skills": {
+          "11191": "Skill_A_Catalyst_MD.png",
+          "11192": "Skill_S_Lauma_01.png",
+          "11195": "Skill_E_Lauma_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Lauma.png",
+        "Icon": "UI_AvatarIcon_Lauma.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Lauma.png"
+      }
+    }
+  },
+  {
+    "Id": "10000120",
+    "Elements": [
+      {
+        "Element": "electro",
+        "Consts": [
+          "UI_Talent_S_Flins_01.png",
+          "UI_Talent_S_Flins_02.png",
+          "UI_Talent_U_Flins_02.png",
+          "UI_Talent_S_Flins_03.png",
+          "UI_Talent_U_Flins_01.png",
+          "UI_Talent_S_Flins_04.png"
+        ],
+        "Skills": {
+          "11201": "Skill_A_03.png",
+          "11202": "Skill_S_Flins_01.png",
+          "11205": "Skill_E_Flins_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Flins.png",
+        "Icon": "UI_AvatarIcon_Flins.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Flins.png"
+      }
+    }
+  },
+  {
+    "Id": "10000121",
+    "Elements": [
+      {
+        "Element": "hydro",
+        "Consts": [
+          "UI_Talent_S_Aino_03.png",
+          "UI_Talent_S_Aino_02.png",
+          "UI_Talent_U_Aino_01.png",
+          "UI_Talent_S_Aino_01.png",
+          "UI_Talent_U_Aino_02.png",
+          "UI_Talent_S_Aino_04.png"
+        ],
+        "Skills": {
+          "11211": "Skill_A_04.png",
+          "11212": "Skill_S_Aino_01.png",
+          "11215": "Skill_E_Aino_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Aino.png",
+        "Icon": "UI_AvatarIcon_Aino.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Aino.png"
+      }
+    }
+  },
+  {
+    "Id": "10000122",
+    "Elements": [
+      {
+        "Element": "dendro",
+        "Consts": [
+          "UI_Talent_S_Nefer_01.png",
+          "UI_Talent_S_Nefer_02.png",
+          "UI_Talent_U_Nefer_01.png",
+          "UI_Talent_S_Nefer_03.png",
+          "UI_Talent_U_Nefer_02.png",
+          "UI_Talent_S_Nefer_04.png"
+        ],
+        "Skills": {
+          "11221": "Skill_A_Catalyst_MD.png",
+          "11222": "Skill_S_Nefer_01.png",
+          "11225": "Skill_E_Nefer_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Nefer.png",
+        "Icon": "UI_AvatarIcon_Nefer.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Nefer.png"
+      }
+    }
+  },
+  {
+    "Id": "10000123",
+    "Elements": [
+      {
+        "Element": "pyro",
+        "Consts": [
+          "UI_Talent_S_Durin_03.png",
+          "UI_Talent_S_Durin_04.png",
+          "UI_Talent_U_Durin_01.png",
+          "UI_Talent_S_Durin_05.png",
+          "UI_Talent_U_Durin_02.png",
+          "UI_Talent_S_Durin_06.png"
+        ],
+        "Skills": {
+          "11231": "Skill_A_01.png",
+          "11232": "Skill_S_Durin_01.png",
+          "11235": "Skill_E_Durin_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "212301": {
+        "SideIcon": "UI_AvatarIcon_Side_DurinCostumeWic.png",
+        "Icon": "UI_AvatarIcon_DurinCostumeWic.png",
+        "GachaIcon": "UI_Costume_DurinCostumeWic.png"
+      },
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Durin.png",
+        "Icon": "UI_AvatarIcon_Durin.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Durin.png"
+      }
+    }
+  },
+  {
+    "Id": "10000124",
+    "Elements": [
+      {
+        "Element": "anemo",
+        "Consts": [
+          "UI_Talent_S_Jahoda_03.png",
+          "UI_Talent_S_Jahoda_02.png",
+          "UI_Talent_U_Jahoda_01.png",
+          "UI_Talent_S_Jahoda_01.png",
+          "UI_Talent_U_Jahoda_02.png",
+          "UI_Talent_S_Jahoda_04.png"
+        ],
+        "Skills": {
+          "11241": "Skill_A_02.png",
+          "11242": "Skill_S_Jahoda_01.png",
+          "11245": "Skill_E_Jahoda_01.png"
+        }
+      }
+    ],
+    "Costumes": {
+      "default": {
+        "SideIcon": "UI_AvatarIcon_Side_Jahoda.png",
+        "Icon": "UI_AvatarIcon_Jahoda.png",
+        "GachaIcon": "UI_Gacha_AvatarImg_Jahoda.png"
+      }
+    }
+  }
+]

@@ -20,3 +20,16 @@ export const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, 
  * @param format - 格式
  */
 export const time = (format = 'YYYY-MM-DD HH:mm:ss') => moment().format(format)
+
+export const DataProxy = (data: any) => {
+  return typeof data === 'object'
+    ? new Proxy(data, {
+      get (self, key, receiver) {
+        return DataProxy(self[key])
+      },
+      set (target, key, newValue) {
+        return Reflect.set(target, key, newValue)
+      }
+    })
+    : data
+}

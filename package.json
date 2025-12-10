@@ -1,33 +1,35 @@
 {
-  "name": "karin-plugin-mys-template",
+  "name": "karin-plugin-mys-genshin",
   "version": "1.0.0",
   "author": "babanbang",
   "type": "module",
-  "description": "karin-plugin-mys-core",
-  "homepage": "https://github.com/Karin-Mys-Plugins/karin-plugin-mys-template",
+  "description": "karin-plugin-mys-genshin",
+  "homepage": "https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin",
   "bugs": {
-    "url": "https://github.com/Karin-Mys-Plugins/karin-plugin-mys-template/issues"
+    "url": "https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Karin-Mys-Plugins/karin-plugin-mys-template.git"
+    "url": "git+https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin.git"
   },
   "scripts": {
     "app": "node lib/app.js",
     "build": "npm run build:css && tsup",
-    "build:css": "tailwindcss -i src/template/tailwind.css -o resources/styles/karin-plugin-mys-core.css",
+    "build:css": "tailwindcss -i src/template/tailwind.css -o resources/styles/karin-plugin-mys-genshin.css",
     "dev": "cross-env EBV_FILE=\"development.env\" node --import tsx src/app.ts",
-    "dev:css": "tailwindcss -i src/template/tailwind.css -o resources/styles/karin-plugin-mys-core.css --watch",
+    "dev:css": "tailwindcss -i src/template/tailwind.css -o resources/styles/karin-plugin-mys-genshin.css --watch",
     "pub": "npm publish --access public"
   },
   "main": "lib/index.js",
   "devDependencies": {
-    "@karinjs/plugin-puppeteer": "^1.0.21",
+    "@karinjs/plugin-puppeteer": "^1.1.2",
     "@types/express": "^5.0.1",
     "@types/lodash": "^4.17.16",
     "@types/node": "^20.17.8",
+    "@types/react": "^19.2.7",
     "cross-env": "^7.0.3",
     "eslint": "^9.7.0",
+    "karin-plugin-mys-core": "^1.0.16",
     "neostandard": "^0.11.9",
     "node-karin": "^1.13.0",
     "tailwindcss": "^3.4.17",
@@ -36,7 +38,7 @@
     "typescript": "^5.5.3"
   },
   "peerDependencies": {
-    "karin-plugin-mys-core": "^1.0.4"
+    "karin-plugin-mys-core": "^1.0.16"
   },
   "karin": {
     "main": "src/index.ts",

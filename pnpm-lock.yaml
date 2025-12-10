@@ -7,14 +7,10 @@ settings:
 importers:
 
   .:
-    dependencies:
-      karin-plugin-mys-core:
-        specifier: ^1.0.4
-        version: 1.0.4
     devDependencies:
       '@karinjs/plugin-puppeteer':
-        specifier: ^1.0.21
-        version: 1.0.21
+        specifier: ^1.1.2
+        version: 1.1.2
       '@types/express':
         specifier: ^5.0.1
         version: 5.0.5
@@ -24,12 +20,18 @@ importers:
       '@types/node':
         specifier: ^20.17.8
         version: 20.19.25
+      '@types/react':
+        specifier: ^19.2.7
+        version: 19.2.7
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
       eslint:
         specifier: ^9.7.0
         version: 9.39.1(jiti@1.21.7)
+      karin-plugin-mys-core:
+        specifier: ^1.0.16
+        version: 1.0.16
       neostandard:
         specifier: ^0.11.9
         version: 0.11.9(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
@@ -467,12 +469,8 @@ packages:
   '@karinjs/node-schedule@1.0.0':
     resolution: {integrity: sha512-dHhYKcprM/5DQhVX/CFZGsJcNhbfUuE14zFuNunvzU5WdX+mqnpPpOAOaHdKMOLJunaq6zMdBHDYNw/NgEBQyg==}
 
-  '@karinjs/plugin-puppeteer@1.0.21':
-    resolution: {integrity: sha512-WyzIzZ0fgbUgU9xT36UzTBDHplq16WXRyqCMNd8CZbTNCuzbrx1WMg8q1AmSCn5rNovMCS56IucexenXm3DmyA==}
-
-  '@karinjs/puppeteer@2.2.4':
-    resolution: {integrity: sha512-u8ubMmxnmkco8PXr/vS5jkb61W+4/vSkaBRrlkdUqlPk6rh17TPdsIfoxuMI+bT94gG8c82KFzrI9I+2i4jkKg==}
-    hasBin: true
+  '@karinjs/plugin-puppeteer@1.1.2':
+    resolution: {integrity: sha512-eRz3dUREYj/eY8l6r7aJCDUlJpe1kWDIRzPDj6Mk5fFkks4x9t3kajrU9tEi9RMyGciW1SPBAJ5Bcse0AKLAcg==}
 
   '@karinjs/redis@1.1.3':
     resolution: {integrity: sha512-Keo+1pJxvddTqBF4BE7AnZqvbBRXZ4QaZa8uJCKngmQ303TV3M0x0gHuKBfDNXQAkiHylw09a3YAzj68sh/Dhw==}
@@ -608,6 +606,23 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@snapka/browser-finder@0.1.4':
+    resolution: {integrity: sha512-PToJctMSQnnKCEsqyBIK4kHR/EGlm8CzgufqgM8xFjwWyDjTbx3pR5LNZSyzinmkMujx9dGXrmOJc9wl6e9iTg==}
+
+  '@snapka/browsers@0.1.3':
+    resolution: {integrity: sha512-+GrqM5o7142dMU0p3aEMVoE9Tp/oI9o18dKPXcRLZ0w5fq1TAA7ZGvSxxOawrwhmk47Y6CEfAgqoP9wpiQm8jw==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  '@snapka/puppeteer-core@0.1.3':
+    resolution: {integrity: sha512-nhocIw1Hw9DB7zKO3czq7EHFKerE8Pgs/xtL1LKSMknHcWZV8ux+B4ZFYY/eZRmimjSa10kbuYuurLZyi0LZ1w==}
+
+  '@snapka/puppeteer@0.1.5':
+    resolution: {integrity: sha512-fGKTV1DiiA5/1U/UKKXKLulAJRe3svM3VHSND57d4d0nlkW0H7OKka0DsRSnThhtnf6d4hZ8ZyE4qcZGZirpTw==}
+
+  '@snapka/types@0.1.2':
+    resolution: {integrity: sha512-oXFFnciHooMXhuGoyEHO2JFheoLPRUuW3rGkDTi+qMsG4T16I3lBpEpjPVcQDla23oAO0I44+RQWT1jkXWrZMg==}
+
   '@stylistic/eslint-plugin@2.13.0':
     resolution: {integrity: sha512-RnO1SaiCFHn666wNz2QfZEFxvmiNRqhzaMXHXxXXKt+MEP7aajlPxUSMIQpKAaJfverpovEYqjBOXDq6dDcaOQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -655,6 +670,9 @@ packages:
 
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
+
+  '@types/react@19.2.7':
+    resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
 
   '@types/send@0.17.6':
     resolution: {integrity: sha512-Uqt8rPBE8SY0RK8JB1EzVOIZ32uqy8HwdxCnoCOsYrvnswqmFZ/k+9Ikidlk/ImhsdvBsloHbAlewb2IEBV/Og==}
@@ -910,6 +928,9 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+
+  csstype@3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -1421,8 +1442,8 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
 
-  karin-plugin-mys-core@1.0.4:
-    resolution: {integrity: sha512-ccqPm11zbkF1Dwgf7v4nFQIEZjEtz5zyN5uwSH+5wWuM4VptX9kEk/94Bith8SU1fma3xj3P1QNhNW95QPmM8g==}
+  karin-plugin-mys-core@1.0.16:
+    resolution: {integrity: sha512-B5Q6kR7bha9gQ+6QaRFIUnIcNJY5rfkb2tAAg0ka9IWbyK9Rhkyiv9TICbkAGXAezCNXJ48UyyqgxD9iASTjBg==}
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
@@ -1572,6 +1593,10 @@ packages:
     resolution: {integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==}
     engines: {node: '>=10'}
 
+  p-limit@7.2.0:
+    resolution: {integrity: sha512-ATHLtwoTNDloHRFFxFJdHnG6n2WUeFjaR8XQMFdKIv0xkXjrER8/iG9iu265jOM95zXHAfv9oTkqhrfbIzosrQ==}
+    engines: {node: '>=20'}
+
   p-locate@4.1.0:
     resolution: {integrity: sha512-R79ZZ/0wAxKGu3oYMlz8jy/kbhsNrS7SKZ7PxEHBgJ5+F2mtFW2fK2cOtBh1cHYkQsbzFV7I+EoRKe6Yt0oK7A==}
     engines: {node: '>=8'}
@@ -1705,8 +1730,17 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
+  react-dom@19.2.1:
+    resolution: {integrity: sha512-ibrK8llX2a4eOskq1mXKu/TGZj9qzomO+sNfO98M6d9zIPOEhlBkMkBUBLd1vgS0gQsLDBzA+8jJBVXDnfHmJg==}
+    peerDependencies:
+      react: ^19.2.1
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react@19.2.1:
+    resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
+    engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
@@ -1780,6 +1814,9 @@ packages:
   safe-regex-test@1.1.0:
     resolution: {integrity: sha512-x/+Cz4YrimQxQccJf5mKEbIa1NzeCRNI5Ecl/ekmlYaampdNLPalVyIcCZNNH3MvmqBugV5TMYZXv0ljslUlaw==}
     engines: {node: '>= 0.4'}
+
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -2105,6 +2142,10 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
+  yocto-queue@1.2.2:
+    resolution: {integrity: sha512-4LCcse/U2MHZ63HAJVE+v71o7yOdIe4cZ70Wpf8D/IyjDKYQLV5GD46B+hSTjJsvV5PztjvHoU580EftxjDZFQ==}
+    engines: {node: '>=12.20'}
+
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
@@ -2356,11 +2397,9 @@ snapshots:
 
   '@karinjs/node-schedule@1.0.0': {}
 
-  '@karinjs/plugin-puppeteer@1.0.21':
+  '@karinjs/plugin-puppeteer@1.1.2':
     dependencies:
-      '@karinjs/puppeteer': 2.2.4
-
-  '@karinjs/puppeteer@2.2.4': {}
+      '@snapka/puppeteer': 0.1.5
 
   '@karinjs/redis@1.1.3': {}
 
@@ -2448,6 +2487,24 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.53.3':
     optional: true
 
+  '@snapka/browser-finder@0.1.4':
+    dependencies:
+      '@snapka/browsers': 0.1.3
+
+  '@snapka/browsers@0.1.3': {}
+
+  '@snapka/puppeteer-core@0.1.3': {}
+
+  '@snapka/puppeteer@0.1.5':
+    dependencies:
+      '@snapka/browser-finder': 0.1.4
+      '@snapka/browsers': 0.1.3
+      '@snapka/puppeteer-core': 0.1.3
+      '@snapka/types': 0.1.2
+      p-limit: 7.2.0
+
+  '@snapka/types@0.1.2': {}
+
   '@stylistic/eslint-plugin@2.13.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/utils': 8.48.0(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
@@ -2505,6 +2562,10 @@ snapshots:
   '@types/qs@6.14.0': {}
 
   '@types/range-parser@1.2.7': {}
+
+  '@types/react@19.2.7':
+    dependencies:
+      csstype: 3.2.3
 
   '@types/send@0.17.6':
     dependencies:
@@ -2817,6 +2878,8 @@ snapshots:
   crypt@0.0.2: {}
 
   cssesc@3.0.0: {}
+
+  csstype@3.2.3: {}
 
   data-view-buffer@1.0.2:
     dependencies:
@@ -3489,10 +3552,12 @@ snapshots:
       object.assign: 4.1.7
       object.values: 1.2.1
 
-  karin-plugin-mys-core@1.0.4:
+  karin-plugin-mys-core@1.0.16:
     dependencies:
       md5: 2.3.0
       qrcode: 1.5.4
+      react: 19.2.1
+      react-dom: 19.2.1(react@19.2.1)
       sequelize: 6.37.7
     transitivePeerDependencies:
       - ibm_db
@@ -3684,6 +3749,10 @@ snapshots:
     dependencies:
       yocto-queue: 0.1.0
 
+  p-limit@7.2.0:
+    dependencies:
+      yocto-queue: 1.2.2
+
   p-locate@4.1.0:
     dependencies:
       p-limit: 2.3.0
@@ -3787,7 +3856,14 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
+  react-dom@19.2.1(react@19.2.1):
+    dependencies:
+      react: 19.2.1
+      scheduler: 0.27.0
+
   react-is@16.13.1: {}
+
+  react@19.2.1: {}
 
   read-cache@1.0.0:
     dependencies:
@@ -3895,6 +3971,8 @@ snapshots:
       call-bound: 1.0.4
       es-errors: 1.3.0
       is-regex: 1.2.1
+
+  scheduler@0.27.0: {}
 
   semver@6.3.1: {}
 
@@ -4315,3 +4393,5 @@ snapshots:
       yargs-parser: 18.1.3
 
   yocto-queue@0.1.0: {}
+
+  yocto-queue@1.2.2: {}

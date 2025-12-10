@@ -24,15 +24,5 @@
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
   "typescript.format.insertSpaceAfterConstructor": true,
-  "javascript.format.insertSpaceAfterConstructor": true,
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "compressed", // 可选：编译的 CSS 格式（expanded 或 compressed）
-      "extensionName": ".css", // 输出文件的扩展名
-      "savePath": null // 设置为 null 表示与 SCSS 文件相同路径
-    }
-  ],
-  "liveSassCompile.settings.includeItems": [
-    "/resources/**/*.scss"
-  ]
+  "javascript.format.insertSpaceAfterConstructor": true
 }

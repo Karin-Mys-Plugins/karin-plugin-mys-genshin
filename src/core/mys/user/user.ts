@@ -1,18 +1,18 @@
-import { TemplateUIDInfoTableType, TemplateUserInfoDB } from '@/core/database'
+import { GenshinUIDInfoTableType, GenshinUserInfoDB } from '@/core/database'
 import { BaseUserInfoTableType } from 'karin-plugin-mys-core/database'
 import { BaseUserInfo, GameUserInfoBase, UidInfoType } from 'karin-plugin-mys-core/mys'
 
-export class TemplateUserInfo extends BaseUserInfo<TemplateUIDInfoTableType & BaseUserInfoTableType> implements GameUserInfoBase<TemplateUIDInfoTableType & BaseUserInfoTableType> {
+export class GenshinUserInfo extends BaseUserInfo<GenshinUIDInfoTableType & BaseUserInfoTableType> implements GameUserInfoBase<GenshinUIDInfoTableType & BaseUserInfoTableType> {
   get main_uid (): string {
-    return this.UserInfo['template-main']
+    return this.UserInfo['gs-main']
   }
 
   get mainUIDInfo (): UidInfoType | undefined {
     return this.getUIDInfo(this.main_uid)
   }
 
-  get bind_uids (): TemplateUIDInfoTableType['template-uids'] {
-    return this.UserInfo['template-uids']
+  get bind_uids (): GenshinUIDInfoTableType['gs-uids'] {
+    return this.UserInfo['gs-uids']
   }
 
   getUIDInfo (uid: string): UidInfoType | undefined {
@@ -44,11 +44,11 @@ export class TemplateUserInfo extends BaseUserInfo<TemplateUIDInfoTableType & Ba
     return uidInfoList
   }
 
-  static async create (userId: string, initAll: boolean = false): Promise<TemplateUserInfo> {
-    const userInfo = new TemplateUserInfo(userId)
+  static async create (userId: string, initAll: boolean = false): Promise<GenshinUserInfo> {
+    const userInfo = new GenshinUserInfo(userId)
 
     userInfo.refresh = async () => {
-      const UserInfoData = await (await TemplateUserInfoDB()).findByPk(userId, true)
+      const UserInfoData = await (await GenshinUserInfoDB()).findByPk(userId, true)
 
       await userInfo.initMysAccountInfo(UserInfoData, initAll)
 

@@ -138,3 +138,6 @@ build
 
 # build output
 lib/
+
+#Tailwind CSS Output
+resources/styles/

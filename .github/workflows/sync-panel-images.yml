@@ -1,0 +1,85 @@
+name: Sync Panel Images # 同步面板图片
+
+on:
+  push:
+    branches:
+      - main # 仅当推送到 main 分支时触发
+    paths:
+      - "resources/panel/**/*.json" # 仅当 resources/panel 目录下的 JSON 文件修改时触发
+  workflow_dispatch: # 允许手动触发工作流
+
+permissions:
+  contents: write # 需要写权限来推送到 resources 分支
+
+jobs:
+  sync-images:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出 main 分支代码
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # 获取最近两次提交，用于比较差异
+
+      # 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 安装依赖（sharp 用于图片转换，axios 用于下载）
+      - name: Install dependencies
+        run: npm install sharp axios
+
+      # 检测 JSON 文件变更
+      - name: Detect JSON changes
+        id: detect
+        run: |
+          # 检查是否为手动触发
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "手动触发工作流，将处理所有 JSON 文件"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            # 获取修改的 JSON 文件列表
+            CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep 'resources/panel/.*\.json' || true)
+            if [ -z "$CHANGED_FILES" ]; then
+              echo "No JSON files changed in resources/panel"
+              echo "has_changes=false" >> $GITHUB_OUTPUT
+            else
+              echo "Changed files:"
+              echo "$CHANGED_FILES"
+              echo "has_changes=true" >> $GITHUB_OUTPUT
+              # 保存修改的文件列表
+              echo "$CHANGED_FILES" > changed_files.txt
+            fi
+          fi
+
+      # 检出 resources 分支
+      - name: Checkout resources branch
+        if: steps.detect.outputs.has_changes == 'true'
+        run: |
+          git fetch origin resources:resources || git checkout --orphan resources
+          git checkout resources || git checkout --orphan resources
+
+      # 运行下载脚本
+      - name: Download images
+        if: steps.detect.outputs.has_changes == 'true'
+        run: |
+          # 切回 main 分支获取 JSON 文件
+          git checkout main -- resources/panel
+          # 运行下载脚本
+          node .github/scripts/download-panel-images.js
+
+      # 提交并推送到 resources 分支
+      - name: Commit and push to resources branch
+        if: steps.detect.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add enka/
+          if git diff --staged --quiet; then
+            echo "No new images to commit"
+          else
+            git commit -m "chore: update panel images from main branch"
+            git push origin resources
+          fi

@@ -12,7 +12,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "tsconfig.json": "tsconfig.*.json, env.d.ts",
-    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, CHANGELOG.md, CODE_OF_CONDUCT.md"
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, tailwind*, .prettier*, prettier*, .editorconfig, CHANGELOG.md, CODE_OF_CONDUCT.md"
   },
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,

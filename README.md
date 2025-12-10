@@ -1,106 +1,43 @@
-# Karin mys 插件开发模板
+![karin-plugin-mys-genshin](https://socialify.git.ci/Karin-Mys-Plugins/karin-plugin-mys-genshin/image?forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
 
 ## 📖 目录
 
-- [前言](#前言)
-- [详细开发流程](#详细开发流程)
-- [常见问题与建议](#常见问题与建议)
-- [贡献与反馈](#贡献与反馈)
+- [快速安装](#快速安装)
+- [已支持功能](#已支持功能)
+- [贡献者](#贡献者)
+
+## 快速安装
+
+- 本插件已加入插件商店，可在插件商店中一键下载安装。
 
 ---
 
-## 前言
 
-本插件需要依赖[karin-plugin-mys-core](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-core)，请确保及时适配最新的更新内容！
+## 已支持功能
 
->有任何不懂请去查看源码、如有功能需求或BUG欢迎提交[issue](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-core/issues)
+<details><summary><b>米游社、UID相关</b></summary>
 
----
+- [x] 绑定、删除、查看、切换游戏UID
+- [x] 绑定、删除cookie、stoken
+- [x] **扫码登录（推荐）**
 
-## 详细开发流程
-
-1. **克隆项目**
-
-   - 点击右上角 Use this template 新建存储库后将其克隆至本地
-   - 修改你的package.json 插件名称
-   - 其余信息按提示填写
-
-2. **安装依赖**
-
-   ```bash
-   pnpm install
-   ```
-
-3. **开发与调试**
-
-   - 启动开发命令：
-     ```bash
-     pnpm dev
-     ```
-   - 编写你的插件代码于 `src/` 目录。
-   - 编译输出：
-     ```bash
-     pnpm build
-     ```
-   - 调试编译之后的代码：
-     ```bash
-     pnpm app
-     ```
-   - 本地调试建议：
-     - 可用 `pnpm link --global` 进行全局软链测试。
-     - 或在 karin 根目录用 `pnpm add ../your-plugin-repo -w` 进行本地依赖测试。
-
-4. **配置 NPM 秘钥**
-
-   > 用于自动化发布，建议开启 2FA。
-
-   1. 注册 [npmjs](https://www.npmjs.com/) 账号。
-   2. 进入 `Access Tokens`，新建 `Classic Token`，类型选 `Automation`。
-   3. 复制生成的 Token。
-   4. 打开你的 GitHub 仓库 → Settings → Secrets and variables → Actions。
-   5. 新建 `NPM_TOKEN`，粘贴 Token。
-   6. 允许 GitHub Actions 创建和批准 PR（Settings → Actions）。
-
-5. **设置包信息**
-
-   > 包名必须唯一，建议先在 [npm](https://www.npmjs.com/) 搜索确认。
-
-   - 其他如 `author`、`description`、`homepage`、`bugs.url`、`repository` 可在 package.json 中补充完善。
-   - **CI 配置无需再手动修改 package-name，已自动同步。**
-
-6. **自动化发布**
-
-   > 推送代码后，GitHub Actions 会自动编译并发布到 npm。
-
-   - 常规开发流程：
-     1. `git add . && git commit -m "feat: ..." && git push`
-     2. 等待 CI 自动发布
-     3. 发布成功后可在 npm 页面看到新版本
-
-7. **安装与验证**
-
-   - 在 karin 根目录下安装你的插件：
-     ```bash
-     pnpm add your-package-name -w
-     ```
-   - 验证插件是否生效，可查看 karin 启动日志或相关功能。
+</details>
 
 ---
+### 贡献者
+> [!TIP]
+> 部分图片来源于[Enka](https://enka.network/)
 
-## 常见问题与建议
+[![贡献者](https://contributors-img.web.app/image?repo=Karin-Mys-Plugins/karin-plugin-mys-core)](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-core/graphs/contributors)
 
-- **Q: 发布失败怎么办？**
-  - 检查 NPM_TOKEN 是否配置正确，权限是否足够。
-  - 包名是否唯一，未被占用。
-  - Actions 日志可定位具体报错。
-- **Q: 如何本地调试插件？**
-  - 推荐用 `pnpm link` 或本地依赖安装。
-- **Q: 如何贡献代码？**
-  - 欢迎 PR，建议先提 issue 讨论。
+![Alt](https://repobeats.axiom.co/api/embed/0be514158871bc0af07cd6d4be41730dfa801715.svg "Repobeats analytics image")
 
----
+## 如何参与贡献（PR）
 
-## 贡献与反馈
+1. Fork 本仓库，创建你的分支
+2. 提交你的更改，附上简要说明
+3. 发起 Pull Request，耐心等待 Review
+4. 你的名字将出现在贡献者列表，收获一份开源荣誉！
+5. 有任何建议或问题，欢迎在 [Issues](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin/issues) 提出。
 
-- 有任何建议或问题，欢迎在 [Issues](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-template/issues) 提出。
-- 也可加入官方交流群交流经验。
+> 💡 欢迎任何形式的贡献，无论是代码、文档、建议还是灵感！

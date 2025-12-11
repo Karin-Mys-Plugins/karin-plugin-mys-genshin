@@ -1,4 +1,4 @@
-import { Cfg, DefaultConfigType, ResourceSourceEnum, ResourceTypeEnum } from '@/core/config'
+import { Cfg, ResourceSourceEnum, ResourceTypeEnum } from '@/core/config'
 import { GenshinGame } from '@/core/mys'
 import { UpdataBaseResFuc } from '@/template'
 import karin, { logger, segment } from 'node-karin'
@@ -7,8 +7,7 @@ import axios from 'node-karin/axios'
 export const UpdataBaseRes = karin.command(
   new RegExp(`^#?(${GenshinGame.prefixs.join('|')})(图片)?资源更新$`, 'i'),
   async (e) => {
-    const resType = ResourceTypeEnum.BaseRes
-    const source = Cfg.get<DefaultConfigType[typeof resType]['source']>(`${resType}.source`)
+    const source = Cfg.get(`${ResourceTypeEnum.BaseRes}.source`)
 
     if (source === ResourceSourceEnum.UnSet) {
       e.reply('请选择更新源序号并发送：\n1. GitHub \n2. GitHub Proxy \n3. GitCode \n4. 自定义链接')
@@ -18,13 +17,13 @@ export const UpdataBaseRes = karin.command(
 
       switch (parseInt(ctx.msg.trim())) {
         case 1:
-          Cfg.set(`${resType}.source`, ResourceSourceEnum.GitHub, true)
+          Cfg.set(`${ResourceTypeEnum.BaseRes}.source`, ResourceSourceEnum.GitHub, true)
           break
         case 2:
-          Cfg.set(`${resType}.source`, ResourceSourceEnum.GitHubProxy, true)
+          Cfg.set(`${ResourceTypeEnum.BaseRes}.source`, ResourceSourceEnum.GitHubProxy, true)
           break
         case 3:
-          Cfg.set(`${resType}.source`, ResourceSourceEnum.GitCode, true)
+          Cfg.set(`${ResourceTypeEnum.BaseRes}.source`, ResourceSourceEnum.GitCode, true)
           break
         case 4: {
           e.reply('请发送自定义资源链接。')
@@ -52,8 +51,7 @@ export const UpdataBaseRes = karin.command(
             return true
           }
 
-          Cfg.set(`${resType}.customUrl`, ctx1.msg.trim(), false)
-          Cfg.set(`${resType}.source`, ResourceSourceEnum.Custom, true)
+          Cfg.set(ResourceTypeEnum.BaseRes, { source: ResourceSourceEnum.Custom, customUrl: ctx1.msg.trim() }, true)
 
           break
         }
@@ -64,7 +62,7 @@ export const UpdataBaseRes = karin.command(
       }
     }
 
-    e.reply(`正在更新『${GenshinGame.name}』 基础资源 (Source: ${Cfg.get<ResourceSourceEnum>(`${resType}.source`)})，请稍候……`)
+    e.reply(`正在更新『${GenshinGame.name}』 基础资源 (Source: ${Cfg.get(`${ResourceTypeEnum.BaseRes}.source`)})，请稍候……`)
 
     const result = await UpdataBaseResFuc()
     if (result.error.length > 0) {

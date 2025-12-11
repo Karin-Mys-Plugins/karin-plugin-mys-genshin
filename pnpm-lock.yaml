@@ -30,8 +30,8 @@ importers:
         specifier: ^9.7.0
         version: 9.39.1(jiti@1.21.7)
       karin-plugin-mys-core:
-        specifier: ^1.0.16
-        version: 1.0.16
+        specifier: ^1.0.20
+        version: 1.0.20
       neostandard:
         specifier: ^0.11.9
         version: 0.11.9(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
@@ -1442,8 +1442,8 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
 
-  karin-plugin-mys-core@1.0.16:
-    resolution: {integrity: sha512-B5Q6kR7bha9gQ+6QaRFIUnIcNJY5rfkb2tAAg0ka9IWbyK9Rhkyiv9TICbkAGXAezCNXJ48UyyqgxD9iASTjBg==}
+  karin-plugin-mys-core@1.0.20:
+    resolution: {integrity: sha512-oy4rlv4VyqYgW7mETQrB4IxtYePvMp4Jd9VzRNRcPDVw+1MfWNjmitZyN7u+BlzA7nhMnFpLUkWnUIiBlDtC4Q==}
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
@@ -3552,7 +3552,7 @@ snapshots:
       object.assign: 4.1.7
       object.values: 1.2.1
 
-  karin-plugin-mys-core@1.0.16:
+  karin-plugin-mys-core@1.0.20:
     dependencies:
       md5: 2.3.0
       qrcode: 1.5.4

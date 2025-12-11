@@ -21,6 +21,10 @@
     "pub": "npm publish --access public"
   },
   "main": "lib/index.js",
+  "engines": {
+    "karin-plugin-mys-core": "^1.0.20",
+    "karin": "^1.12.0"
+  },
   "devDependencies": {
     "@karinjs/plugin-puppeteer": "^1.1.2",
     "@types/express": "^5.0.1",
@@ -29,7 +33,7 @@
     "@types/react": "^19.2.7",
     "cross-env": "^7.0.3",
     "eslint": "^9.7.0",
-    "karin-plugin-mys-core": "^1.0.16",
+    "karin-plugin-mys-core": "^1.0.20",
     "neostandard": "^0.11.9",
     "node-karin": "^1.13.0",
     "tailwindcss": "^3.4.17",
@@ -38,7 +42,7 @@
     "typescript": "^5.5.3"
   },
   "peerDependencies": {
-    "karin-plugin-mys-core": "^1.0.16"
+    "karin-plugin-mys-core": "^1.0.20"
   },
   "karin": {
     "main": "src/index.ts",

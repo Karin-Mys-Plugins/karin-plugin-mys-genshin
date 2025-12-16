@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin/compare/v1.0.1...v1.0.2) (2025-12-16)
+
+
+### Bug Fixes
+
+* 适配mys-core更新 ([75054d3](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin/commit/75054d33f567fac5de959866916fb51ea4782d16))
+
 ## [1.0.1](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin/compare/v1.0.0...v1.0.1) (2025-12-11)
 
 

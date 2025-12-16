@@ -22,7 +22,7 @@
   },
   "main": "lib/index.js",
   "engines": {
-    "karin-plugin-mys-core": "^1.0.20",
+    "karin-plugin-mys-core": "^1.0.23",
     "karin": "^1.12.0"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "@types/react": "^19.2.7",
     "cross-env": "^7.0.3",
     "eslint": "^9.7.0",
-    "karin-plugin-mys-core": "^1.0.20",
+    "karin-plugin-mys-core": "1.0.23",
     "neostandard": "^0.11.9",
     "node-karin": "^1.13.0",
     "tailwindcss": "^3.4.17",
@@ -42,7 +42,7 @@
     "typescript": "^5.5.3"
   },
   "peerDependencies": {
-    "karin-plugin-mys-core": "^1.0.20"
+    "karin-plugin-mys-core": "^1.0.23"
   },
   "karin": {
     "main": "src/index.ts",

@@ -7,15 +7,12 @@ export const GenshinPanelInfoTable = createTable<GenshinPanelInfoTableType>(
 )
 
 export const GenshinPanelInfoDB = await GenshinPanelInfoTable.init(
-  {
-    uid: Database.PkColumn('STRING'),
-    nickname: Database.Column('STRING', '旅行者'),
-
-    level: Database.Column('INTEGER', 0),
-    worldLevel: Database.Column('INTEGER', 0),
-
-    pfpsId: Database.Column('STRING', ''),
-    namecardId: Database.Column('STRING', ''),
-
-  }
+  [
+    Database.PkColumn('uid', 'STRING'),
+    Database.Column('nickname', 'STRING', '旅行者'),
+    Database.Column('level', 'INTEGER', 1),
+    Database.Column('worldLevel', 'INTEGER', 0),
+    Database.Column('pfpsId', 'STRING', ''),
+    Database.Column('namecardId', 'STRING', '')
+  ]
 )

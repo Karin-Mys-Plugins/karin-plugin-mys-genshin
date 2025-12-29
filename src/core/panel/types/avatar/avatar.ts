@@ -1,4 +1,4 @@
-import { ElementEnum } from './panel'
+import { ElementEnum } from '../panel'
 
 export interface AvatarCostumeItemType {
   SideIcon: string
@@ -19,8 +19,4 @@ export interface AvatarResourceDataItemType {
     default: AvatarCostumeItemType
     [costumeId: string]: AvatarCostumeItemType
   }
-}
-
-export interface AvatarBaseDataType {
-
 }

@@ -1,4 +1,3 @@
 export * from './api'
-export * from './panel'
 export * from './types'
 export * from './user'

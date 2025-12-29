@@ -6,4 +6,5 @@ export const enum ElementEnum {
   冰 = 'cryo',
   岩 = 'geo',
   风 = 'anemo',
+  无 = 'none'
 }

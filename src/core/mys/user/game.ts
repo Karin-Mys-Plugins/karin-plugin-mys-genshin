@@ -1,7 +1,7 @@
 import { GAME, GenshinUIDInfoTableType } from '@/core/database'
+import { GenshinPanel } from '@/core/panel'
 import { BaseUserInfoTableType, MysAccountType } from 'karin-plugin-mys-core/database'
 import { MysGame, RegisterGameBase } from 'karin-plugin-mys-core/mys'
-import { GenshinPanel } from '../panel'
 import { GenshinRegionType } from '../types'
 import { GenshinUserInfo } from './user'
 

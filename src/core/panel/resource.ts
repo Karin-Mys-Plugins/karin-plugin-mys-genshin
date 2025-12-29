@@ -2,7 +2,7 @@ import { Render } from '@/template'
 import { absPath, requireFileSync, watch } from 'node-karin'
 import lodash from 'node-karin/lodash'
 import path from 'node:path'
-import { AvatarCostumeItemType, AvatarElementItemType, AvatarResourceDataItemType, ElementEnum } from '../types'
+import { AvatarCostumeItemType, AvatarElementItemType, AvatarResourceDataItemType, ElementEnum } from './types'
 
 const avatars = requireFileSync<AvatarResourceDataItemType[]>(`${Render.plugin.resources.default}/panel/avatars.json`)
 const AvatarBaseResMap: Map<string, AvatarResourceDataItemType> = new Map(avatars.map(avt => [avt.Id, avt]))

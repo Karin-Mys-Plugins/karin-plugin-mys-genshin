@@ -59,15 +59,15 @@ export const ShowBindUIDComponent: React.FC<ShowBindUIDProps> = ({
         <div className='space-y-3 bg-white/80 p-3 rounded-md shadow-sm'>
           {bindUids.map((item, index) => {
             return (
-              <div key={item.uid} className='flex items-center gap-3'>
+              <div key={item.uid} className='flex items-center gap-2'>
                 {/* 左侧：序号（移到容器外） */}
-                <div className='flex h-8 w-8 flex-none items-center justify-center rounded-md bg-gradient-to-br from-amber-400 to-orange-500 text-sm font-bold text-white shadow-sm'>
+                <div className='flex h-6 w-6 flex-none items-center justify-center rounded-md bg-gradient-to-br from-amber-400 to-orange-500 text-sm font-bold text-white shadow-sm'>
                   {index + 1}
                 </div>
 
                 {/* UID 容器 */}
                 <div
-                  className='relative flex-1 overflow-hidden rounded-l-full rounded-r-md py-4 pr-6 pl-4 shadow-sm bg-cover bg-center'
+                  className='relative flex-1 overflow-hidden rounded-l-full rounded-r-md py-2 pr-6 pl-2 shadow-sm bg-cover bg-center'
                   style={{ backgroundImage: `url('${getNamecardImage(item.namecardId)}')`, }}
                 >
                   <div className='absolute inset-0 bg-white/35 backdrop-blur-[1px]' />
@@ -95,7 +95,7 @@ export const ShowBindUIDComponent: React.FC<ShowBindUIDProps> = ({
                   <div className='relative z-10 flex items-center gap-3'>
                     {/* 头像 */}
                     <img
-                      className='h-12 w-12 flex-none rounded-full border-2 border-white object-cover shadow-sm bg-white/75'
+                      className='h-14 w-14 flex-none rounded-full border-2 border-white object-cover shadow-sm bg-white/75'
                       src={`${getPfpsImage(item.pfpsId)}`}
                     />
 
@@ -120,7 +120,7 @@ export const ShowBindUIDComponent: React.FC<ShowBindUIDProps> = ({
                     {/* 右侧：主账号标记 */}
                     {item.main && (
                       <img
-                        className='h-10 w-10 flex-none object-contain ml-1'
+                        className='h-10 w-10 flex-none object-contain mt-auto'
                         src={`${plugin.resources.default}/image/paimon.webp`}
                       />
                     )}

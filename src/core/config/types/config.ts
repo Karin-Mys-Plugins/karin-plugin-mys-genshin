@@ -1,3 +1,5 @@
+import { MysAccountType } from 'karin-plugin-mys-core/database'
+
 export const enum ResourceSourceEnum {
   UnSet = '',
   GitHub = 'github',
@@ -17,8 +19,11 @@ export interface ResourceConfigItemType {
 }
 
 export interface DefaultConfigType {
-  [ResourceTypeEnum.BaseRes]: ResourceConfigItemType
-  [ResourceTypeEnum.PanelRes]: ResourceConfigItemType
+  panel: {
+    source: Record<MysAccountType, string>
+    proxy: boolean
+  }
+  resources: Record<ResourceTypeEnum, ResourceConfigItemType>
 }
 
 export interface DefaultConfigDefineType {

@@ -31,12 +31,70 @@ jobs:
       - name: Install dependencies
         run: npm install --frozen-lockfile
 
+      # 修改版本号为预览版本
+      - name: Update version for preview
+        run: |
+          # 获取当前版本号
+          $currentVersion = (Get-Content package.json | ConvertFrom-Json).version
+          # 获取 PR 编号
+          $prNumber = "${{ github.event.pull_request.number }}"
+          # 获取提交的短 SHA
+          $shortSha = "${{ github.event.pull_request.head.sha }}".Substring(0, 7)
+          # 生成预览版本号: 1.0.23-pr.123.abc1234
+          $previewVersion = "$currentVersion-pr.$prNumber.$shortSha"
+          # 更新 package.json 中的版本号
+          npm version $previewVersion --no-git-tag-version
+          # 输出版本号供后续步骤使用
+          echo "PREVIEW_VERSION=$previewVersion" >> $env:GITHUB_ENV
+        shell: pwsh
+
       # 编译
       - name: Build
         run: npm run build
 
       # 使用 pkg.pr.new 发布预览版本
       - name: Publish to pkg.pr.new
-        run: npx pkg-pr-new publish --compact --comment=update --template=compact
+        id: pkg-pr-new
+        run: |
+          npx --yes pkg-pr-new publish --json output.json --comment=off --compact --packageManager=pnpm > pkg-output.txt 2>&1
+
+          # 提取实际的安装URL
+          ACTUAL_INSTALL_URL=$(grep -oE 'https://pkg\.pr\.new/[^[:space:]`]+' pkg-output.txt | head -n 1 || echo "")
+
+          if [ ! -z "$ACTUAL_INSTALL_URL" ]; then
+            # 尝试提取短链接格式
+            if [[ "$ACTUAL_INSTALL_URL" =~ https://pkg\.pr\.new/[^/]+/[^/]+/([^/]+@.+) ]]; then
+              ACTUAL_INSTALL_URL="https://pkg.pr.new/${BASH_REMATCH[1]}"
+            fi
+            PNPM_INSTALL_CMD="pnpm add ${ACTUAL_INSTALL_URL} -w"
+          else
+            PNPM_INSTALL_CMD="未找到安装命令"
+          fi
+
+          # 转换为 UTC+8 时间
+          BEIJING_TIME=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+
+          echo "pnpm_install_cmd=$PNPM_INSTALL_CMD" >> $GITHUB_OUTPUT
+          echo "published_time=$BEIJING_TIME" >> $GITHUB_OUTPUT
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 在 PR 中评论预览版本信息
+      - name: Comment preview info
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          message: |
+            ## 🚀 预览包发布成功
+
+            ### 🏷️ 包信息
+            - **版本:** `${{ env.PREVIEW_VERSION }}`
+            - **提交:** [`${{ github.event.pull_request.head.sha }}`](https://github.com/${{ github.repository }}/commit/${{ github.event.pull_request.head.sha }})
+            - **发布时间:** `${{ steps.pkg-pr-new.outputs.published_time }}`
+
+            ### 📥 安装命令
+            ```bash
+            ${{ steps.pkg-pr-new.outputs.pnpm_install_cmd }}
+            ```
+          comment-tag: published-packages
+          mode: upsert
+          reactions: rocket

@@ -1,8 +1,7 @@
 import { GenshinPanelInfoDB, GenshinPanelInfoTableType, GenshinPanelInfoType } from '@/core/database'
+import { GenshinRegionType, matchRegion } from '@/core/mys'
 import { common } from '@/utils'
 import { logger } from 'node-karin'
-import { GenshinRegionType } from '../types'
-import { matchRegion } from '../user'
 
 export class GenshinPanel {
   uid: GenshinPanelInfoTableType['uid']

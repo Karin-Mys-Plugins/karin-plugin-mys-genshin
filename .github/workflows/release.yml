@@ -14,16 +14,14 @@ jobs:
   release-please:
     # 设置工作流程运行环境为 Ubuntu
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' # 仅在 push 事件时运行(包括直接推送和 PR 合并)
     steps:
       # 使用 release-please-action@v4 动作
       - uses: googleapis/release-please-action@v4
         id: release
         with:
-          # 设置发布类型为 Node.js
-          release-type: node
-          # 可选: 使用 PAT 令牌以触发其他工作流
-          # 如需 release-please 创建的 PR 触发 preview 工作流,需要在仓库设置中创建 PAT
-          # 并取消注释下面这行(将 PAT_TOKEN 替换为你的密钥名称)
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
           token: ${{ secrets.PAT_TOKEN }}
       # 检出代码
       - uses: actions/checkout@v4

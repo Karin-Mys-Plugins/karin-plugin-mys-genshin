@@ -1,5 +1,5 @@
 import { Cfg, ResourceSourceEnum, ResourceTypeEnum } from '@/core/config'
-import { AvatarResourceDataItemType } from '@/core/mys'
+import { AvatarResourceDataItemType } from '@/core/panel'
 import { dir } from '@/dir'
 import { CoreCfg } from 'karin-plugin-mys-core/core'
 import { ReactRender } from 'karin-plugin-mys-core/render'
@@ -49,7 +49,7 @@ const downloadBaseResUrls = {
 }
 
 export const UpdataBaseResFuc = async (start?: boolean): Promise<{ success: number, fail: number, downloaded: number, error: string[] }> => {
-  const Config = Cfg.get(ResourceTypeEnum.BaseRes)
+  const Config = Cfg.get(`resources.${ResourceTypeEnum.BaseRes}`)
   if (!Config.source) {
     if (start) {
       logger.error(`『${dir.name}』未设置资源更新源！请设置后使用 #gs资源更新 下载图片资源。`)
@@ -58,9 +58,9 @@ export const UpdataBaseResFuc = async (start?: boolean): Promise<{ success: numb
   }
 
   const baseUrl = Config.source === ResourceSourceEnum.GitHubProxy
-    ? `${CoreCfg.get('proxy.github').replace(/\/$/, '')}/${downloadBaseResUrls[ResourceSourceEnum.GitHub]}`
+    ? `${CoreCfg.get('proxy.github').replace(/\/+$/, '')}/${downloadBaseResUrls[ResourceSourceEnum.GitHub]}`
     : Config.source === ResourceSourceEnum.Custom
-      ? Config.customUrl.replace(/\/$/, '')
+      ? Config.customUrl.replace(/\/+$/, '')
       : downloadBaseResUrls[Config.source]
 
   const Count = { success: 0, fail: 0, downloaded: 0, error: [] as string[] }

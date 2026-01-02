@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin/compare/v1.0.2...v1.0.3) (2026-01-02)
+
+
+### 🐛 错误修复
+
+* 伤害计算 ([61deace](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin/commit/61deace229cf084ef1c504fc2de875be701c65c6))
+* 使用tsdown、部分伤害计算 ([402a4d4](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin/commit/402a4d48409e5d49e8a3710b7056c15a9821b0a6))
+
 ## [1.0.2](https://github.com/Karin-Mys-Plugins/karin-plugin-mys-genshin/compare/v1.0.1...v1.0.2) (2025-12-16)
 
 

@@ -1,4 +1,4 @@
-import { ElementEnum } from '../panel'
+import { ElementEnum } from './panel'
 
 export interface AvatarCostumeItemType {
   SideIcon: string

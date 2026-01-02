@@ -14,14 +14,12 @@ export class DmgCalc {
 
   #calcRet (
     args: {
-      PctNum: number
-      talent: DmgTalentKeysEnum[]
-      basicNum: number
-      mode: 'talent' | 'basic'
+      PctNum?: number; talent?: DmgTalentKeysEnum[]; basicNum?: number; mode?: 'talent' | 'basic'
     },
-    reaction: ['scene', ElementReactionEnum | 'phy'] | [ElementReactionEnum | 'phy'] | ['scene'] | [] = [], dynamicData: Partial<DynamicDataType> = {}
+    reaction: ['scene', ElementReactionEnum | 'phy'] | [ElementReactionEnum | 'phy'] | ['scene'] | [] = [],
+    dynamicData: Partial<DynamicDataType> = {}
   ) {
-    const { PctNum, talent, basicNum, mode } = args
+    const { PctNum = 0, talent = [], basicNum = 0, mode = 'talent' } = args
     const {
       dmg: dynamicDmg = 0, phy: dynamicPhy = 0, cpct: dynamicCpct = 0, cdmg: dynamicCdmg = 0
     } = dynamicData
@@ -49,7 +47,7 @@ export class DmgCalc {
           dmgNum = (dmgNum - dmgPct) < 1 ? 1 : (dmgNum - dmgPct)
         }
 
-        reaction.length > 1 && reaction.shift()
+        if (reaction.length > 1) reaction.shift()
       } else {
         dmgNum = 1 + (dmg.base + dmg.plus + dynamicDmg) / 100
       }
@@ -183,34 +181,38 @@ export class DmgCalc {
     }
   }
 
-  dmg (pctNum: number, talent: DmgTalentKeysEnum[], reaction?: (ElementReactionEnum | 'scene')[], basicNum = 0, mode: 'talent' | 'basic' = 'talent', dynamicData?: Partial<DynamicDataType>) {
-    return 0
+  dmg (pctNum: number, talent: DmgTalentKeysEnum[], reaction?: ['scene', ElementReactionEnum | 'phy'] | [ElementReactionEnum | 'phy'] | ['scene'] | [], basicNum = 0, mode: 'talent' | 'basic' = 'talent', dynamicData?: Partial<DynamicDataType>) {
+    return this.#calcRet({ PctNum: pctNum, talent, basicNum, mode }, reaction, dynamicData)
   }
 
-  basic (pctNum: number, talent: DmgTalentKeysEnum[]) {
-
+  basic (basicNum: number, talent: DmgTalentKeysEnum[], reaction?: ['scene', ElementReactionEnum | 'phy'] | [ElementReactionEnum | 'phy'] | ['scene'] | [], dynamicData?: Partial<DynamicDataType>) {
+    return this.#calcRet({ talent, basicNum, mode: 'basic' }, reaction, dynamicData)
   }
 
-  reaction (reaction: (ElementReactionEnum | 'scene')[], talent: DmgTalentKeysEnum[]) {
-
+  reaction (reaction: ['scene', ElementReactionEnum | 'phy'] | [ElementReactionEnum | 'phy'] | ['scene'] | [], talent: DmgTalentKeysEnum[]) {
+    return this.#calcRet({ talent, mode: 'basic' }, reaction)
   }
 
-  dynamic (pctNum: number, talent: DmgTalentKeysEnum[], dynamicData: Partial<DynamicDataType>, reaction?: (ElementReactionEnum | 'scene')[]) {
-
+  dynamic (pctNum: number, talent: DmgTalentKeysEnum[], dynamicData: Partial<DynamicDataType>, reaction?: ['scene', ElementReactionEnum | 'phy'] | [ElementReactionEnum | 'phy'] | ['scene'] | []) {
+    return this.#calcRet({ PctNum: pctNum, talent, mode: 'talent' }, reaction, dynamicData)
   }
 
-  /** @description 治疗 */
+  /** 治疗 */
   heal (pctNum: number) {
-
+    return {
+      dmg: 0, avg: pctNum * (1 + DmgCalc.calc(this.#avatarData.baseAttr.heal) / 100 + this.#avatarData.baseAttr.heal.inc / 100)
+    }
   }
 
-  /** @description 护盾 */
+  /** 护盾 */
   shield (pctNum: number) {
-
+    return {
+      dmg: 0, avg: pctNum * (DmgCalc.calc(this.#avatarData.baseAttr.shield) / 100) * (this.#avatarData.baseAttr.shield.inc / 100)
+    }
   }
 
-  /** @description 扩散 */
+  /** 扩散 */
   swirl () {
-
+    return this.#calcRet({}, [ElementReactionEnum.扩散])
   }
 }

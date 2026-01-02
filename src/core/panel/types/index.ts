@@ -1,4 +1,4 @@
-export * from './avatar'
+export * from './Avatar'
 export * from './dmg'
 export * from './metaData'
 export * from './panel'

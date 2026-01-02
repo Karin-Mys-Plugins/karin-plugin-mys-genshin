@@ -11,63 +11,63 @@ export interface EnkaDataType {
 }
 
 export interface EnkaPlayerInfoDataType {
-  /** @description 名称 */
+  /** 名称 */
   nickname: string
-  /** @description 等级 */
+  /** 等级 */
   level: number
-  /** @description 签名 */
+  /** 签名 */
   signature: string
-  /** @description 世界等级 */
+  /** 世界等级 */
   worldLevel: number
-  /** @description 资料名片 ID */
+  /** 资料名片 ID */
   nameCardId: number
-  /** @description 角色 ID 与等级的列表 */
+  /** 角色 ID 与等级的列表 */
   showAvatarInfoList: {
-    /** @description 角色 ID */
+    /** 角色 ID */
     avatarId: number
-    /** @description 角色等级 */
+    /** 角色等级 */
     level: number
-    /** @description 角色衣装 ID */
+    /** 角色衣装 ID */
     costumeId?: number
-    /** @description 元素类型 */
+    /** 元素类型 */
     energyType?: number
   }[]
-  /** @description 正在展示的名片 ID 列表 */
+  /** 正在展示的名片 ID 列表 */
   showNameCardIdList: number[]
-  /** @description 玩家头像 */
+  /** 玩家头像 */
   profilePicture: {
-    /** @description 角色 ID */
+    /** 角色 ID */
     avatarId?: number
-    /** @description 头像 ID */
+    /** 头像 ID */
     id?: number
   }
 }
 
 export interface EnkaAvatarInfoItemType {
-  /** @description 角色 ID */
+  /** 角色 ID */
   avatarId: number
-  /** @description 命之座 ID 列表 */
+  /** 命之座 ID 列表 */
   talentIdList?: number[]
-  /** @description 天赋等级 Map */
+  /** 天赋等级 Map */
   skillLevelMap: Record<string, number>
-  /** @description 装备及圣遗物信息 */
+  /** 装备及圣遗物信息 */
   equipList: (EnkaAvatarWeaponInfoType | EnkaAvatarReliquaryInfoType)[]
   fetterInfo: {
-    /** @description 好感度等级 */
+    /** 好感度等级 */
     expLevel: number
   }
-  /** @description 角色衣装 ID */
+  /** 角色衣装 ID */
   costumeId: number
 }
 
 export interface EnkaAvatarWeaponInfoType {
   itemId: number
   weapon: {
-    /** @description 武器等级 */
+    /** 武器等级 */
     level: number
-    /** @description 武器突破等级 */
+    /** 武器突破等级 */
     promoteLevel: number
-    /** @description 武器精炼等级 { itemId: 0-4 } */
+    /** 武器精炼等级 { itemId: 0-4 } */
     affixMap: {
       [key: string]: number
     }
@@ -80,11 +80,11 @@ export interface EnkaAvatarWeaponInfoType {
 export interface EnkaAvatarReliquaryInfoType {
   itemId: number
   reliquary: {
-    /** @description 圣遗物等级 */
+    /** 圣遗物等级 */
     level: number
-    /** @description 圣遗物主属性 ID */
+    /** 圣遗物主属性 ID */
     mainPropId: number
-    /** @description 圣遗物副属性 ID 列表 */
+    /** 圣遗物副属性 ID 列表 */
     appendPropIdList: number[]
   }
   flat: {

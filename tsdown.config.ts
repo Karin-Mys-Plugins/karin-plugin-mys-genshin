@@ -1,10 +1,10 @@
 import { defineConfig } from 'tsdown'
 
 /**
- * @description `tsdown` configuration options
+ * `tsdown` configuration options
  */
 export default defineConfig({
-  entry: ['src/*.ts', 'src/apps/*.ts'], // 入口文件
+  entry: ['src/*.ts', 'src/apps/*.ts', 'src/exports/meta/*/index.ts'], // 入口文件
   format: 'esm', // 输出格式
   target: 'node18', // 目标环境
   sourcemap: false, // 是否生成 sourcemap
@@ -13,7 +13,7 @@ export default defineConfig({
   outExtensions: () => ({
     js: '.js',
   }),
-  dts: false, // 是否生成 .d.ts 文件
+  dts: true, // 是否生成 .d.ts 文件
   outDir: 'lib', // 输出目录
   treeshake: true, // 树摇优化
   minify: false, // 压缩代码

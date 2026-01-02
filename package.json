@@ -14,11 +14,19 @@
   },
   "scripts": {
     "app": "node lib/app.js",
-    "build": "npm run build:css && tsdown",
+    "build": "npm run type-check && npm run build:css && tsdown",
     "build:css": "tailwindcss -i src/template/tailwind.css -o resources/styles/karin-plugin-mys-genshin.css",
+    "type-check": "tsc --noEmit",
     "dev": "cross-env EBV_FILE=\"development.env\" node --import tsx src/app.ts",
     "dev:css": "tailwindcss -i src/template/tailwind.css -o resources/styles/karin-plugin-mys-genshin.css --watch",
     "pub": "npm publish --access public"
+  },
+  "exports": {
+    "./meta/avatars": {
+      "types": "./lib/exports/meta/avatars/index.d.ts",
+      "development": "./src/exports/meta/avatars/index.ts",
+      "default": "./lib/exports/meta/avatars/index.js"
+    }
   },
   "main": "lib/index.js",
   "engines": {
@@ -32,8 +40,8 @@
     "@types/node": "^20.17.8",
     "@types/react": "^19.2.7",
     "cross-env": "^7.0.3",
-    "eslint": "^9.7.0",
-    "karin-plugin-mys-core": "https://pkg.pr.new/karin-plugin-mys-core@93bc469",
+    "eslint": "^9.39.2",
+    "karin-plugin-mys-core": "https://pkg.pr.new/karin-plugin-mys-core@dd5c92c",
     "neostandard": "^0.11.9",
     "node-karin": "^1.13.0",
     "tailwindcss": "^3.4.17",
@@ -66,8 +74,13 @@
   "files": [
     "LICENSE",
     "/lib/**/*.js",
+    "/lib/**/*.d.ts",
     "resources",
-    "!lib/app.js"
+    "!lib/app.js",
+    "!lib/app.d.ts",
+    "!lib/index.d.ts",
+    "!lib/web.config.d.ts",
+    "!lib/apps/**/*.d.ts"
   ],
   "publishConfig": {
     "access": "public",

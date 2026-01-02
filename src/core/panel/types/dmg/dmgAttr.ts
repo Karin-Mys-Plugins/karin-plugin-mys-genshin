@@ -1,29 +1,35 @@
 export const enum DmgAttrKeysEnum {
-  /** @description 充能 */
+  /** 充能 */
   recharge = 'recharge',
-  /** @description 精通 */
+  /** 精通 */
   mastery = 'mastery',
-  /** @description 暴击 */
+  /** 暴击 */
   cpct = 'cpct',
-  /** @description 爆伤 */
+  /** 爆伤 */
   cdmg = 'cdmg',
-  /** @description 治疗 */
+  /** 治疗 */
   heal = 'heal',
-  /** @description 护盾 */
+  /** 护盾 */
   shield = 'shield',
   dmg = 'dmg',
-  /** @description 物理 */
+  /** 物理 */
   phy = 'phy',
-  /** @description 攻击 */
+  /** 攻击 */
   atk = 'atk',
-  /** @description 防御 */
+  /** 攻击百分比 */
+  atkPct = 'atkPct',
+  /** 防御 */
   def = 'def',
-  /** @description 生命 */
-  hp = 'hp'
+  /** 防御百分比 */
+  defPct = 'defPct',
+  /** 生命 */
+  hp = 'hp',
+  /** 生命百分比 */
+  hpPct = 'hpPct',
 }
 
 export const enum DmgTalentKeysEnum {
-  /** @description 夜魂 */
+  /** 夜魂 */
   nightsoul = 'nightsoul',
   a = 'a', a2 = 'a2', a3 = 'a3',
   e = 'e', q = 'q'

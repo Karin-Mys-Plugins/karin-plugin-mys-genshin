@@ -21,14 +21,14 @@ export const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, 
  */
 export const time = (format = 'YYYY-MM-DD HH:mm:ss') => moment().format(format)
 
-export const DataProxy = (data: any) => {
+export const DataProxy = (data: any, setFuc?: (target: any, key: string | symbol, value: any, receiver?: any) => boolean) => {
   return typeof data === 'object'
     ? new Proxy(data, {
       get (self, key, receiver) {
         return DataProxy(self[key])
       },
-      set (target, key, newValue) {
-        return Reflect.set(target, key, newValue)
+      set (target, key, newValue, receiver) {
+        return setFuc ? setFuc(target, key, newValue, receiver) : Reflect.set(target, key, newValue)
       }
     })
     : data

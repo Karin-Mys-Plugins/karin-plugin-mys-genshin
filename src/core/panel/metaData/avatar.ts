@@ -1,70 +1,192 @@
-import * as avatarMetaDatas from '@/exports/meta/avatars'
-import { AvatarCalcBuffItemType, AvatarCalcDataItemType, AvatarMetaDataType, ValidatedBuffArray } from '../types'
+import { logger } from 'node-karin'
+import { AvatarCalcBuffItemType, AvatarCalcDataItemType, AvatarElementCalcBuffItemType, AvatarElementCalcDataItemType, AvatarElementsMetaDataType, AvatarMetaDataType, AvatarMetaId, ElementEnum, MainAttrListType, ValidatedElementBuffArray } from '../types'
 
 const AvatarMetaDataMap = new Map<string, DefineAvatarMetaData<any>>()
 
-// 提取导出键名中的数字部分类型
-type ExtractId<K extends keyof typeof avatarMetaDatas> = K extends `_${infer ID}` ? ID : never
+export const getAvatarMetaData = <ID extends AvatarMetaId> (id: ID): DefineAvatarMetaData<AvatarElementsMetaDataType> => AvatarMetaDataMap.get(id)!
 
-type AvatarId = ExtractId<keyof typeof avatarMetaDatas>
+export const checkMetaID = (id: string): AvatarMetaId => AvatarMetaDataMap.has(id)
+  ? id as AvatarMetaId
+  : (() => { throw new Error(`Avatar Meta Data ID "${id}" not found`) })()
 
-export const getAvatarMetaData = <ID extends AvatarId> (id: ID): typeof avatarMetaDatas[`_${ID}`] | undefined => {
-  return AvatarMetaDataMap.get(id) as typeof avatarMetaDatas[`_${ID}`] | undefined
-}
+export class DefineAvatarMetaData<EMeta extends AvatarElementsMetaDataType> {
+  #MetaData: EMeta
 
-export class DefineAvatarMetaData<Meta extends AvatarMetaDataType> {
-  #MetaData: Meta
+  /** 伤害计算 */
+  #CalcData: {
+    [K in keyof EMeta['elements']]: EMeta['elements'][K] extends AvatarMetaDataType ? Map<string, AvatarCalcDataItemType<EMeta['elements'][K]>> : never
+  } = {} as any
 
-  /** @description 伤害计算 */
-  #CalcData: AvatarCalcDataItemType<Meta>[]
+  /** Buff计算 - 按元素分组 */
+  #CalcBuffs: {
+    [K in keyof EMeta['elements']]: EMeta['elements'][K] extends AvatarMetaDataType ? Map<string, AvatarCalcBuffItemType> : never
+  } = {} as any
 
-  /** @description Buff计算 */
-  #CalcBuffs: AvatarCalcBuffItemType[]
+  #CalcGrades = new Map<string, number>()
+
+  #MainAttr: {
+    [K in keyof EMeta['elements']]: MainAttrListType['mainAttrs']
+  } = {} as any
+
+  DmgRankCalcTitle: {
+    [K in keyof EMeta['elements']]: string
+  } = {} as any
 
   constructor (
-    meta: Meta,
-    calc: AvatarCalcDataItemType<Meta>[],
-    buffs: AvatarCalcBuffItemType[]
+    meta: EMeta, calc: AvatarElementCalcDataItemType<EMeta>[], buffs: AvatarElementCalcBuffItemType<EMeta>[], mainAttr: MainAttrListType[]
   ) {
     this.#MetaData = meta
-    this.#CalcData = calc
-    this.#CalcBuffs = buffs
+
+    calc.forEach(item => {
+      if (!this.#CalcData[item.element]) {
+        this.#CalcData[item.element] = new Map() as any
+      }
+
+      item.calcs.forEach(calcItem => {
+        this.#CalcData[item.element]!.set(calcItem.title, calcItem)
+      })
+    })
+
+    buffs.forEach(item => {
+      if (!this.#CalcBuffs[item.element]) {
+        this.#CalcBuffs[item.element] = new Map() as any
+      }
+
+      item.buffs.forEach(buffItem => {
+        this.#CalcBuffs[item.element]!.set(buffItem.title, buffItem)
+      })
+    })
+
+    mainAttr.forEach(item => {
+      this.#MainAttr[item.element as keyof EMeta['elements']] = item.mainAttrs
+    })
 
     AvatarMetaDataMap.set(meta.id, this)
+
+    for (const element in meta.elements) {
+      this.DmgRankCalcTitle[element as keyof EMeta['elements']] = this.#CalcData[element as keyof EMeta['elements']].keys().next().value ?? ''
+    }
   }
 
-  get MetaData () {
-    return Object.freeze(this.#MetaData)
+  checkElement (element: ElementEnum) {
+    if (!this.#MetaData.elements[element]) {
+      throw new Error(`Avatar "${this.#MetaData.id}" has no element "${element}"`)
+    }
+
+    return element as keyof EMeta['elements']
   }
 
-  get CalcData () {
-    return Object.freeze(this.#CalcData)
+  MetaData<E extends keyof EMeta['elements']> (element: E) {
+    return Object.freeze(this.#MetaData.elements[element as ElementEnum]!)
   }
 
-  get CalcBuffs () {
-    return Object.freeze(this.#CalcBuffs)
+  CalcData<E extends keyof EMeta['elements']> (element: E) {
+    return {
+      data: this.#CalcData[element],
+      get: (title: string) => Object.freeze(this.#CalcData[element].get(title)!),
+      add: (calcs: AvatarCalcDataItemType<EMeta['elements'][E] & AvatarMetaDataType>[]) => {
+        calcs.forEach(calcItem => {
+          this.#CalcData[element].set(calcItem.title, calcItem)
+        })
+      },
+      clear: () => {
+        this.#CalcData[element].forEach(calc => {
+          calc.ignore = true
+        })
+
+        return this.CalcData(element)
+      },
+      delete: this.#CalcData[element]!.delete
+    }
   }
 
-  setCalc (fuc: (calc: AvatarCalcDataItemType<Meta>[]) => void) {
-    fuc(this.#CalcData)
+  CalcBuffs<E extends keyof EMeta['elements']> (element: E) {
+    return {
+      data: this.#CalcBuffs[element],
+      get: (title: string) => Object.freeze(this.#CalcBuffs[element].get(title)!),
+      add: (buffs: AvatarCalcBuffItemType[]) => {
+        buffs.forEach(buffItem => {
+          this.#CalcBuffs[element].set(buffItem.title, buffItem)
+        })
+      },
+      clear: () => {
+        this.#CalcBuffs[element].forEach(buff => {
+          buff.ignore = true
+        })
+
+        return this.CalcBuffs(element)
+      },
+      delete: this.#CalcBuffs[element]!.delete
+    }
+  }
+
+  MainAttr (element: keyof EMeta['elements']) {
+    return Object.freeze(this.#MainAttr[element])
+  }
+
+  DmgRankCalc (element: keyof EMeta['elements']) {
+    return Object.freeze(this.CalcData(element).get(this.DmgRankCalcTitle[element])!)
+  }
+
+  addCalcs (calcs: AvatarElementCalcDataItemType<EMeta>[]) {
+    calcs.forEach(item => {
+      if (!this.#MetaData.elements[item.element]) {
+        logger.error(`Avatar "${this.#MetaData.id}" has no element "${item.element}"`)
+        return
+      }
+
+      if (!this.#CalcData[item.element]) {
+        this.#CalcData[item.element] = new Map() as any
+      }
+
+      item.calcs.forEach(calcItem => {
+        this.#CalcData[item.element]!.set(calcItem.title, calcItem)
+      })
+    })
+  }
+
+  addBuffs<const Buffs extends readonly any[]> (_buffs: ValidatedElementBuffArray<Buffs> & Buffs) {
+    const buffs = _buffs as unknown as AvatarElementCalcBuffItemType<EMeta>[]
+
+    buffs.forEach(item => {
+      if (!this.#MetaData.elements[item.element]) {
+        logger.error(`Avatar "${this.#MetaData.id}" has no element "${item.element}"`)
+        return
+      }
+
+      if (!this.#CalcBuffs[item.element]) {
+        this.#CalcBuffs[item.element] = new Map() as any
+      }
+
+      item.buffs.forEach(buffItem => {
+        this.#CalcBuffs[item.element]!.set(buffItem.title, buffItem)
+      })
+    })
+  }
+
+  setMainAttrs (element: keyof EMeta['elements'], mainAttrs: MainAttrListType['mainAttrs']) {
+    this.#MainAttr[element] = mainAttrs
+  }
+
+  setDmgRankCalcTitle (element: keyof EMeta['elements'], title: string) {
+    if (!this.#CalcData[element].has(title)) {
+      logger.error(`Avatar "${this.#MetaData.id}" setDmgDefault error: title "${title}" not found for "${String(element)}" calc`)
+      return
+    }
+
+    this.DmgRankCalcTitle[element] = title
   }
 }
 
 /**
  * 辅助函数: 创建角色元数据定义
- * @description 提供类型安全的方式创建角色元数据,自动验证 buffs 中 title 的占位符
+ * 提供类型安全的方式创建角色元数据,自动验证 buffs 中 title 的占位符
  */
-export function defineAvatarMeta<
-  Meta extends AvatarMetaDataType,
-  const Buffs extends readonly any[]
-> (
-  meta: Meta,
-  calc: AvatarCalcDataItemType<Meta>[],
-  buffs: ValidatedBuffArray<Buffs> & Buffs
+export function defineAvatarMeta<EMeta extends AvatarElementsMetaDataType, const Buffs extends readonly any[]> (
+  meta: EMeta,
+  calc: AvatarElementCalcDataItemType<EMeta>[],
+  buffs: ValidatedElementBuffArray<Buffs> & Buffs,
+  mainAttr: MainAttrListType[]
 ) {
-  return new DefineAvatarMetaData(
-    meta,
-    calc,
-    buffs as unknown as AvatarCalcBuffItemType[]
-  )
+  return new DefineAvatarMetaData(meta, calc, buffs as unknown as AvatarElementCalcBuffItemType<EMeta>[], mainAttr)
 }

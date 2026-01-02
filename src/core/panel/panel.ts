@@ -7,20 +7,20 @@ export class GenshinPanel {
   uid: GenshinPanelInfoTableType['uid']
   region: GenshinRegionType
 
-  /** @description 冒险等级 */
+  /** 冒险等级 */
   declare level: GenshinPanelInfoType['level']
-  /** @description 世界等级 */
+  /** 世界等级 */
   declare worldLevel: GenshinPanelInfoType['worldLevel']
 
-  /** @description 昵称 */
+  /** 昵称 */
   declare nickname: GenshinPanelInfoType['nickname']
 
-  /** @description 游戏头像 */
+  /** 游戏头像 */
   declare pfpsId: GenshinPanelInfoType['pfpsId']
-  /** @description 名片 */
+  /** 名片 */
   declare namecardId: GenshinPanelInfoType['namecardId']
 
-  /** @description 删除面板数据 */
+  /** 删除面板数据 */
   declare destroy: GenshinPanelInfoType['destroy']
 
   #PanelInfo: GenshinPanelInfoType
